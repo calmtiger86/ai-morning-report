@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 트렌드 모닝 리포트 - 2026년 03월 25일</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #fff; line-height: 1.7; font-size: 16px; }
+  .header { background: linear-gradient(135deg, #FFD166, #E07B0A); padding: 44px 24px; text-align: center; }
+  .header .subtitle { font-size: 1.15em; font-weight: 600; opacity: 0.9; margin-bottom: 10px; letter-spacing: -0.3px; }
+  .header h1 { font-size: 2.2em; font-weight: 800; }
+  .header .date { opacity: 0.75; margin-top: 10px; font-size: 1em; }
+  .section { padding: 28px 20px; border-bottom: 1px solid #1f1f1f; }
+  .section-title { font-size: 1.35em; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .card { background: #111; border-radius: 14px; padding: 20px; margin-bottom: 16px; border: 1px solid #222; overflow: hidden; }
+  .card-img-wrap { width: calc(100% + 40px); margin: -20px -20px 16px -20px; height: 180px; overflow: hidden; }
+  .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .source { font-size: 0.82em; color: #555; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .card h3 { font-size: 1.08em; font-weight: 700; margin-bottom: 10px; line-height: 1.5; }
+  .card .summary { font-size: 0.97em; color: #bbb; line-height: 1.7; }
+  .card details { float: right; margin: 12px 0 0 10px; }
+  .card details summary {
+    list-style: none;
+    display: inline;
+    background: none;
+    border: none;
+    color: #FFD166;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    user-select: none;
+  }
+  .card details summary::-webkit-details-marker { display: none; }
+  .card details summary::marker { display: none; }
+  .card details summary .btn-close { display: none; }
+  .card details[open] summary .btn-open { display: none; }
+  .card details[open] summary .btn-close { display: inline; }
+  .card .detail-content { display: none; clear: both; font-size: 0.97em; color: #bbb; line-height: 1.7; margin-top: 12px; border-top: 1px solid #222; padding-top: 12px; }
+  .card details[open] ~ .detail-content { display: block; }
+  .card-footer { display: none; clear: both; align-items: center; justify-content: space-between; margin-top: 14px; flex-wrap: wrap; gap: 8px; }
+  .card details[open] ~ .card-footer { display: flex; }
+  .card a.link { color: #FFD166; font-size: 0.9em; text-decoration: none; }
+  .card a.link:hover { text-decoration: underline; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { background: #1f1f1f; border-radius: 20px; padding: 4px 12px; font-size: 0.8em; color: #999; }
+  .tag.free { background: #052e16; color: #4ade80; border: 1px solid #166534; }
+  .tag.paid { background: #1c1917; color: #fb923c; border: 1px solid #9a3412; }
+  .tag.easy { background: #0c1a2e; color: #60a5fa; border: 1px solid #1e40af; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 12px; padding: 4px 0 10px; }
+  .keyword { background: linear-gradient(135deg, #1f1f1f, #2a2a2a); border: 1px solid #333; border-radius: 30px; padding: 10px 22px; font-size: 1em; }
+  .keyword.hot { background: linear-gradient(135deg, #FFD166, #E07B0A); border-color: #E07B0A; color: #1a1a1a; }
+  .highlight { color: #f59e0b; }
+  .footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9em; }
+  .footer a { color: #FFD166; text-decoration: none; font-size: 1em; font-weight: 600; }
+  @media (max-width: 480px) {
+    body { font-size: 17px; }
+    .header h1 { font-size: 1.9em; }
+    .section-title { font-size: 1.25em; }
+    .card h3 { font-size: 1.1em; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="subtitle">일반인·소상공인·1인기업을 위한 AI 실용 가이드</div>
+  <h1>🤖 AI 트렌드 모닝 리포트</h1>
+  <div class="date">2026년 03월 25일</div>
+  <div style="margin-top: 18px; margin-bottom: 10px;">
+    <a href="https://page.stibee.com/subscriptions/480199" target="_blank" style="background: rgba(0,0,0,0.25); color: #1a1a1a; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 0.88em; font-weight: 700; margin-right: 8px; border: 1px solid rgba(0,0,0,0.3);">🎁 얼리버드 구독</a>
+    <a href="https://page.stibee.com/subscriptions/480200" target="_blank" style="color: #1a1a1a; font-size: 0.85em; text-decoration: none; opacity: 0.7;">정상가 구독 →</a>
+  </div>
+</div>
+
+<!-- 1. 오늘의 빅 뉴스 -->
+<div class="section">
+  <div class="section-title">🔥 오늘의 빅 뉴스</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg" alt="Claude 컴퓨터 사용 기능" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">TechCrunch / CNBC</div>
+    <h3>Claude, 이제 내 컴퓨터를 대신 조작한다 — Anthropic '컴퓨터 사용' 기능 출시</h3>
+    <div class="summary">Anthropic이 Claude에 '컴퓨터 사용(Computer Use)' 기능을 추가했습니다. 이제 Claude가 마우스 클릭, 스크롤, 앱 실행까지 직접 수행합니다. 스마트폰 앱 'Dispatch'와 연동하면 외출 중에도 Claude에게 업무를 맡기고 PC가 알아서 처리하게 할 수 있습니다. Pro/Max 구독자 대상 macOS에서 먼저 시작하며, Windows도 곧 지원 예정입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#Claude</span>
+      <span class="tag">#에이전틱AI</span>
+      <span class="tag">#업무자동화</span>
+    </div>
+    <div class="detail-content">
+      <strong>나에게 어떤 의미?</strong><br><br>
+      지금까지 AI는 '대화 상대'였다면, 이제는 '실제로 일하는 비서'가 됩니다. 예를 들어 "내일 미팅 자료 PPT 만들어줘"라고 말하면 Claude가 파워포인트를 열고, 슬라이드를 만들고, 저장까지 합니다.<br><br>
+      <strong>주의할 점:</strong> 아직 연구 프리뷰 단계로, 실수할 수 있습니다. 중요한 작업은 모니터링하면서 사용하세요. Anthropic은 "새 앱에 접근하기 전 반드시 사용자 허락을 구한다"고 밝혔습니다.<br><br>
+      <strong>사용 조건:</strong> Claude Pro($20/월) 또는 Max($100/월) 구독 필요, 현재 macOS만 지원
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/" target="_blank">TechCrunch 원문 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://kbthink.com/content/dam/tam-dcp-cms/kbcontent/investment/gtc/main-pc.png" alt="엔비디아 베라 루빈" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">KB Think / VentureBeat</div>
+    <h3>엔비디아, 차세대 AI 플랫폼 '베라 루빈' 공개 — 비용 1/10, 성능 5배</h3>
+    <div class="summary">세계 최대 AI 컨퍼런스 GTC 2026에서 젠슨 황 CEO가 차세대 AI 플랫폼 '베라 루빈(Vera Rubin)'을 공개했습니다. 기존 블랙웰 대비 추론 성능 5배, 토큰당 비용은 10분의 1 수준입니다. 삼성전자와 SK하이닉스가 핵심 부품을 공급하며, AWS·Azure·Google Cloud 등 주요 클라우드에서 모두 제공될 예정입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#엔비디아</span>
+      <span class="tag">#GTC2026</span>
+      <span class="tag">#AI인프라</span>
+    </div>
+    <div class="detail-content">
+      <strong>일반인에게 미치는 영향:</strong><br><br>
+      AI 서비스 이용 비용이 점점 저렴해집니다. 지금 ChatGPT나 Claude를 쓸 때 드는 비용이 향후 1~2년 내 크게 낮아질 수 있습니다. 또한 한국 반도체 기업(삼성·SK하이닉스)이 핵심 공급자로 참여해 국내 AI 생태계에도 긍정적입니다.<br><br>
+      젠슨 황은 이번 발표에서 "인류 역사상 가장 거대한 인프라 구축이 시작된다"고 선언했습니다. OpenClaw라는 오픈소스 AI 코딩 프로젝트도 "역사상 가장 인기 있는 오픈소스 프로젝트"로 소개되었습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://kbthink.com/investment/issues/2026-gtc.html" target="_blank">KB Think 분석 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://image.cnbcfm.com/api/v1/image/107291738-1692907530309-gettyimages-1239231900-INSTACART_SIMO.jpeg?v=1773771486&amp;w=1920&amp;h=1080" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">CNBC / OpenAI</div>
+    <h3>OpenAI, 연매출 250억 달러 돌파 — IPO 준비 본격화</h3>
+    <div class="summary">OpenAI가 연간 환산 매출 250억 달러(약 34조 원)를 돌파했습니다. 주간 활성 사용자 9억 명을 확보했으며, 2026년 말 기업공개(IPO)를 준비 중입니다. GPT-5.4 모델을 출시하고 기업용 시장 공략을 강화하면서, 경쟁사 Anthropic(연 190억 달러 매출)과의 격차를 벌리고 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#OpenAI</span>
+      <span class="tag">#ChatGPT</span>
+      <span class="tag">#IPO</span>
+    </div>
+    <div class="detail-content">
+      <strong>ChatGPT 3월 주요 업데이트:</strong><br><br>
+      • GPT-5.1 모델 지원 종료 → GPT-5.3/5.4로 자동 전환<br>
+      • GPT-5.4 Thinking: 추론·코딩·에이전트 워크플로우 통합<br>
+      • 인터랙티브 학습 모듈: 수학·과학 70개 이상 주제 시각화 학습<br>
+      • 레거시 딥 리서치 모드 3/26 종료 예정<br><br>
+      <strong>E커머스 피봇:</strong> 'Instant Checkout' 기능(챗봇 내 직접 구매)은 성과 부진으로 우선순위 하향 조정. 대신 제품 발견(discovery) 기능에 집중합니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.cnbc.com/2026/03/17/openai-preps-for-ipo-in-2026-says-chatgpt-must-be-productivity-tool.html" target="_blank">CNBC 원문 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 2. 이번 주 써볼 만한 AI 도구 -->
+<div class="section">
+  <div class="section-title">🛠 이번 주 써볼 만한 AI 도구</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="https://media.assettype.com/deccanherald/2026-03-05/l91os2by/Pixel-10-Pro-Cover-Photos-Selected-7.png?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="Gemini App Actions" onerror="this.parentElement.style.display='none'"></div>
+      <div class="source">Google</div>
+      <h3>Gemini App Actions — 말 한마디로 스마트폰 앱 자동 조작</h3>
+      <div class="summary">이런 분께 추천: 반복적인 스마트폰 작업(배달 주문, 차량 호출, 스마트홈 제어)이 귀찮은 분. "배달의민족에서 평소 먹던 거 주문해줘"라고 말하면 Gemini가 앱을 열고 주문까지 완료합니다. 3월 Pixel Drop으로 한국에서도 사용 가능해졌습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">설치불필요</span>
+        <span class="tag free">무료</span>
+        <span class="tag">#직장인</span>
+        <span class="tag">#생활자동화</span>
+      </div>
+      <div class="detail-content">
+        <strong>사용법 3단계:</strong><br>
+        1단계: Pixel 10 또는 Galaxy S26에서 Gemini 앱 최신 버전 확인<br>
+        2단계: "Hey Google, [앱 이름]에서 [작업] 해줘" 형식으로 명령<br>
+        3단계: Gemini가 앱을 열고 작업 수행 (첫 실행 시 권한 허용 필요)<br><br>
+        <strong>지원 기기:</strong> Pixel 10 시리즈, Galaxy S26 시리즈 (Android 16 QPR3)<br>
+        <strong>한국어:</strong> 지원
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438" target="_blank">자세히 보기 →</a>
+      </div>
+    </div>
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://res.cloudinary.com/zapier-media/image/upload/v1745941190/Homepage/og-homepage_zls2qi.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+      <div class="source">Zapier</div>
+      <h3>Zapier AI — 자연어로 업무 자동화 설정</h3>
+      <div class="summary">이런 분께 추천: 이메일, 스프레드시트, 메신저 등 여러 앱을 오가며 반복 작업하는 분. "새 문의 이메일이 오면 슬랙에 알림 보내고 스프레드시트에 기록해줘"라고 말하면 자동화가 설정됩니다. 6,000개 이상 앱을 코딩 없이 연결할 수 있어 소상공인 업무 효율화에 최적입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">5분 설정</span>
+        <span class="tag free">무료(100작업/월)</span>
+        <span class="tag paid">$20/월~</span>
+        <span class="tag">#소상공인</span>
+        <span class="tag">#업무자동화</span>
+      </div>
+      <div class="detail-content">
+        <strong>사용법 3단계:</strong><br>
+        1단계: zapier.com 가입 후 "Create Zap" 클릭<br>
+        2단계: AI 채팅창에 원하는 자동화를 한글로 설명<br>
+        3단계: 연결할 앱 로그인 후 테스트 → 활성화<br><br>
+        <strong>활용 예시:</strong> 인스타 DM → 카카오톡 알림, 네이버 폼 응답 → 구글시트 자동 기록<br>
+        <strong>한국어:</strong> 인터페이스 영어, 자동화 설명은 한글 가능
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://zapier.com" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.prod.website-files.com/63e15df811f9df22b231e58f/69a20da89a23a65ce1b211c3_Lindy%20OG.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+      <div class="source">Lindy AI</div>
+      <h3>Lindy AI — 대화형 AI 비서 빌더</h3>
+      <div class="summary">이런 분께 추천: 고객 응대, 일정 관리, 이메일 정리를 자동화하고 싶은 1인 기업. "매일 아침 8시에 오늘 일정 요약해서 슬랙으로 보내줘"처럼 말하면 AI 비서가 생성됩니다. Gmail, Slack, Notion, HubSpot 등 주요 업무 도구와 바로 연동되어 별도 개발 없이 나만의 AI 비서를 만들 수 있습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">설치불필요</span>
+        <span class="tag free">무료 체험</span>
+        <span class="tag paid">$49/월~</span>
+        <span class="tag">#1인기업</span>
+        <span class="tag">#고객응대</span>
+      </div>
+      <div class="detail-content">
+        <strong>사용법 3단계:</strong><br>
+        1단계: lindy.ai 가입<br>
+        2단계: 대화창에 원하는 AI 비서 역할 설명 (예: "고객 문의 이메일 자동 분류 및 답장 초안 작성")<br>
+        3단계: 연동할 앱(Gmail, Slack 등) 연결 후 활성화<br><br>
+        <strong>장점:</strong> 드래그앤드롭 없이 대화만으로 설정, 복잡한 워크플로우도 자연어로 구축<br>
+        <strong>한국어:</strong> 인터페이스 영어, AI는 한글 이해/응답 가능
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.lindy.ai" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source">Product Hunt</div>
+      <h3>Maestri — AI 코딩 에이전트 협업 캔버스</h3>
+      <div class="summary">이런 분께 추천: 노코드로 웹사이트나 앱을 만들고 싶은 창업 준비생. 무한 캔버스에서 여러 AI 에이전트가 동시에 코드를 작성합니다. "쇼핑몰 랜딩페이지 만들어줘"라고 요청하면 디자인, 코드, 배포까지 AI들이 협업해서 완성합니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">설치불필요</span>
+        <span class="tag free">무료 베타</span>
+        <span class="tag">#창업</span>
+        <span class="tag">#노코드</span>
+      </div>
+      <div class="detail-content">
+        <strong>특징:</strong><br>
+        • 여러 AI 에이전트가 각자 역할을 맡아 동시에 작업<br>
+        • 비주얼 캔버스에서 진행 상황 실시간 확인<br>
+        • 코드 수정 요청도 자연어로 가능<br><br>
+        <strong>적합한 용도:</strong> MVP 빠르게 만들기, 랜딩페이지, 간단한 웹앱<br>
+        <strong>한국어:</strong> 지원
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.producthunt.com/posts/maestri" target="_blank">Product Hunt에서 보기 →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. 소상공인·N잡러·1인 크리에이터 AI 활용법 -->
+<div class="section">
+  <div class="section-title">💼 소상공인·N잡러·1인 크리에이터 AI 활용법</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://www.venturesquare.net/wp-content/uploads/2026/02/small-scaled-e1771578387868-263x174.jpg" alt="키체인 미디어" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">VentureSquare</div>
+    <h3>전문직 퍼스널브랜딩 — AI 콘텐츠 기업 '비라즈' 키체인 미디어 출시</h3>
+    <div class="summary">이런 분께 추천: 병원, 로펌, 학원 등 전문 서비스업 종사자로 유튜브·SNS 브랜딩이 필요한 분. 비라즈의 '키체인 미디어'는 AI 영상 제작 + 방송국 기획력을 결합해 전문직 대상 채널 전략을 설계합니다. 단발성 영상이 아닌 장기 브랜드 자산으로 콘텐츠를 축적하는 접근이 특징입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#퍼스널브랜딩</span>
+      <span class="tag">#전문직</span>
+      <span class="tag">#유튜브</span>
+      <span class="tag paid">유료 서비스</span>
+    </div>
+    <div class="detail-content">
+      <strong>서비스 특징:</strong><br>
+      • 의사, 변호사, 교수 등 전문직 특화 채널 전략 수립<br>
+      • AI 영상 생성 기술로 제작 비용 절감<br>
+      • "어떤 기술을 쓰느냐보다 어떤 이야기를 어떤 구조로 풀어낼지가 먼저" — 남궁솔 대표<br><br>
+      <strong>DIY 대안:</strong> 직접 하고 싶다면 ChatGPT로 콘텐츠 기획 → Pictory/Canva로 영상 제작 → 일관된 업로드 스케줄 유지
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.venturesquare.net/1039426" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://framerusercontent.com/images/df7QMNEkrWVNA3gQvuEvcwldg4.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">리멤버 마켓솔루션</div>
+    <h3>AI 이메일·SMS 마케팅 자동화 — 매출의 25~40% 창출</h3>
+    <div class="summary">이런 분께 추천: 단골 고객 관리가 어려운 소상공인, 재구매율을 높이고 싶은 온라인 셀러. 잘 설계된 자동 이메일/SMS 캠페인은 총 매출의 25~40%까지 기여할 수 있습니다. AI가 고객별 구매 이력을 분석해 최적의 타이밍에 맞춤 메시지를 자동 발송합니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">설정 후 자동</span>
+      <span class="tag">#쇼핑몰</span>
+      <span class="tag">#수익화</span>
+      <span class="tag">#CRM</span>
+    </div>
+    <div class="detail-content">
+      <strong>실행 방법:</strong><br>
+      1단계: 스티비, 메일침프 등 이메일 마케팅 도구 선택<br>
+      2단계: 고객 세그먼트 설정 (신규/휴면/VIP 등)<br>
+      3단계: 자동화 시나리오 구축 — 예: 구매 후 3일 → 리뷰 요청, 30일 미방문 → 할인 쿠폰<br><br>
+      <strong>AI 활용 팁:</strong> ChatGPT에게 "우리 쇼핑몰 고객 세그먼트별 이메일 시나리오 10개 만들어줘"라고 요청하면 초안을 빠르게 얻을 수 있습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://market.rememberapp.co.kr/blog/insights/ai-%EB%A7%88%EC%BC%80%ED%8C%85-%ED%8A%B8%EB%A0%8C%EB%93%9C-2026-%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%8B%9C%EB%8C%80%EC%9D%98-%EC%A0%84%EB%9E%B5%EA%B3%BC-%EC%84%B1%EA%B3%B5-%EC%82%AC%EB%A1%80" target="_blank">전략 가이드 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://tilnote.io/api/og?summary=AI%20%EA%B8%B0%EB%B0%98%20%EC%9E%90%EB%8F%99%ED%99%94%20%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%20%EB%AA%A8%EB%8D%B8%EC%9D%80%20%EC%A0%81%EC%9D%80%20%ED%88%AC%EC%9E%90%EC%99%80%20%EB%B9%A0%EB%A5%B8%20%EC%8B%A4%EC%A0%81%20%EC%B0%BD%EC%B6%9C%EC%9D%B4%20%EA%B0%80%EB%8A%A5%ED%95%B4%202026%EB%85%84%20%EA%B8%B0%EC%A4%80%20%EC%A3%BC%EB%AA%A9%EB%B0%9B%EA%B3%A0%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%0A-%20%EA%B3%A0%EA%B0%9D%20%EC%9D%91%EB%8C%80%2C%20%EC%BD%98%ED%85%90%EC%B8%A0%20%EC%83%9D%EC%84%B1%2C%20%EB%A7%88%EC%BC%80%ED%8C%85%20%EB%93%B1%20%EB%B0%98%EB%B3%B5%20%EC%97%85%EB%AC%B4%EB%A5%BC%20AI%EB%A1%9C%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EC%97%AC%20" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">AI Smart Ventures</div>
+    <h3>디지털 부업 TOP 트렌드 — AI 전자책·템플릿 판매</h3>
+    <div class="summary">이런 분께 추천: 본업 외 추가 수입을 원하는 직장인, 경험과 지식을 자산화하고 싶은 분. 자신의 전문 지식을 ChatGPT로 정리해 전자책(PDF)이나 Notion 템플릿으로 제작하고, 크몽·탈잉·클래스101에서 판매하는 방식이 2026년 가장 핫한 N잡으로 떠오르고 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">스마트폰으로 가능</span>
+      <span class="tag free">초기비용 0원</span>
+      <span class="tag">#N잡</span>
+      <span class="tag">#수익화</span>
+      <span class="tag">#부업</span>
+    </div>
+    <div class="detail-content">
+      <strong>실행 가이드:</strong><br>
+      1단계: 내 전문 분야 선정 (예: 엑셀 단축키, 이직 면접 팁, 식단 관리법)<br>
+      2단계: ChatGPT에게 "OO 주제로 전자책 목차 만들어줘" → 각 챕터 내용 작성 요청<br>
+      3단계: Canva로 표지 디자인 → PDF 내보내기 → 크몽/탈잉에 등록<br><br>
+      <strong>성공 팁:</strong> 너무 광범위한 주제보다 "인스타 릴스 알고리즘 공략법"처럼 구체적인 니치를 노리세요. 가격은 9,900~29,000원 사이가 구매 전환율 높음.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://tilnote.io/en/pages/68ee73b58a9f56cc87d0f480" target="_blank">더 많은 아이디어 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://www.ehom.kr/news/2025/03/11/4265bc89d281b4619312f718878b85ee170504.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">쉽톡</div>
+    <h3>소상공인 고객관리 — 클릭 3번으로 1,000명 단골 관리</h3>
+    <div class="summary">이런 분께 추천: 카페, 미용실, 네일샵 등 오프라인 매장을 운영하며 단골 고객 관리가 어려운 분. '쉽톡'은 고객별 방문 이력, 선호 메뉴를 AI가 분석해 맞춤 프로모션 메시지를 자동 발송합니다. 특히 40대 이상 사장님들도 쉽게 사용할 수 있는 직관적 인터페이스가 강점입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">앱 설치만</span>
+      <span class="tag">#카페</span>
+      <span class="tag">#미용실</span>
+      <span class="tag">#오프라인매장</span>
+    </div>
+    <div class="detail-content">
+      <strong>핵심 기능:</strong><br>
+      • 고객 방문 이력 자동 기록<br>
+      • 휴면 고객 자동 감지 → 재방문 유도 메시지<br>
+      • 생일/기념일 맞춤 쿠폰 자동 발송<br><br>
+      <strong>효과:</strong> "신규 고객 유치보다 기존 고객 유지가 5배 저렴하다"는 마케팅 원칙을 AI로 자동화. 적은 노력으로 꾸준한 매출 유지 가능.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.kairnews.com/news/335047" target="_blank">사례 보기 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 4. 국내 AI 소식 -->
+<div class="section">
+  <div class="section-title">🇰🇷 국내 AI 소식</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://www.korea.kr/newsWeb/resources/attaches/2026.01/02/d382b1a13000f8d188ca57e0fc96519f.jpg" alt="중기부 AI 지원" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">중소벤처기업부</div>
+    <h3>2026년 중기부 AI 예산 8천억 원 — 소상공인 AI 활용 지원 본격화</h3>
+    <div class="summary">중소벤처기업부가 2026년 AI 관련 총 7,992억 원을 투입합니다. 소상공인도 AI 바우처(최대 2억 원)를 활용해 AI 솔루션을 도입할 수 있으며, '혁신 소상공인 AI 활용 지원' 사업에 144억 원이 배정되었습니다. 신청은 기업마당(bizinfo.go.kr)에서 가능합니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag free">정부지원금</span>
+      <span class="tag">#소상공인</span>
+      <span class="tag">#AI바우처</span>
+    </div>
+    <div class="detail-content">
+      <strong>주요 지원 사업:</strong><br>
+      • AI 바우처: 과제당 최대 2억 원 (80% 정부 지원)<br>
+      • 혁신 소상공인 AI 활용: 144억 원 — 차별화된 제품/서비스 창출 지원<br>
+      • 제조AI 특화 스마트공장: AI 에이전트, 온디바이스AI 활용 공장 구축<br>
+      • AI 응용제품 신속 상용화: 990억 원 신규<br><br>
+      <strong>신청 방법:</strong> 기업마당(bizinfo.go.kr) → 사업 검색 → 온라인 신청<br>
+      <strong>문의:</strong> 중소벤처통합콜센터 ☎ 1357
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.korea.kr/multi/visualNewsView.do?newsId=148957419" target="_blank">정책 상세 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://www.ehom.kr/news/2026/03/15/b3cde585f0a17388445734d9de66c2a2022521_thumb.jpg" alt="에이전틱 AI" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">환경감시일보</div>
+    <h3>3월 한 달간 267개 AI 모델 출시 — '에이전틱 AI' 시대 본격화</h3>
+    <div class="summary">2026년 3월 한 달 동안만 무려 267개의 새로운 AI 모델이 발표되었습니다. 대부분이 '에이전틱 AI(Agentic AI)' — 스스로 목표를 설정하고 실행하는 자율형 AI입니다. 어도비, 삼성 등 글로벌 기업들이 에이전트 기반 서비스를 속속 출시하며, AI가 단순 답변을 넘어 '직접 일하는' 단계로 진입했습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#에이전틱AI</span>
+      <span class="tag">#삼성</span>
+      <span class="tag">#어도비</span>
+    </div>
+    <div class="detail-content">
+      <strong>에이전틱 AI란?</strong><br>
+      기존 AI: 질문하면 답변 (수동적)<br>
+      에이전틱 AI: 목표를 주면 계획 수립 → 실행 → 결과 확인까지 자율 수행<br><br>
+      <strong>실생활 예시:</strong><br>
+      • "다음 주 출장 준비해줘" → 항공권 검색, 호텔 예약, 일정표 작성까지 자동<br>
+      • 구글 Gemini: 스마트폰에서 배달앱 주문, 차량 호출 등 자동 수행<br><br>
+      <strong>전망:</strong> 2025년이 생성형 AI 대중화 원년이었다면, 2026년은 AI 에이전트의 본격 도약 연도
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.sisadays.co.kr/news/476424" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://img.etnews.com/news/article/2025/12/22/news-p.v1.20251222.c4222699892745c28516f389c8b90165_P1.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">전자신문</div>
+    <h3>콘텐츠·미디어 산업 AI 도입 '골든타임' — 티핑 포인트 돌파</h3>
+    <div class="summary">한국콘텐츠진흥원이 "2026년이 콘텐츠 산업의 AI 골든타임"이라고 진단했습니다. AI 활용은 이미 임계점을 넘었으며, 도입 속도가 곧 경쟁력 격차로 이어집니다. 오픈AI '소라', 구글 영상 생성 AI가 상용화되면서 콘티 제작, 편집, 더빙, 현지화까지 제작 공정 전반이 재편되고 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#콘텐츠</span>
+      <span class="tag">#영상제작</span>
+      <span class="tag">#크리에이터</span>
+    </div>
+    <div class="detail-content">
+      <strong>크리에이터에게 미치는 영향:</strong><br>
+      • 영상 제작 진입 장벽 대폭 낮아짐<br>
+      • 1인 크리에이터도 AI로 고품질 콘텐츠 제작 가능<br>
+      • 반면 차별화 포인트는 '기획력'과 '스토리텔링'으로 이동<br><br>
+      <strong>추천 도구:</strong> Pictory(텍스트→영상), Canva AI(디자인), ElevenLabs(AI 음성), Runway(영상 편집)
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.etnews.com/20251231000243" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.sanity.io/images/4zrzovbb/website/c07f638082c569e8ce1e89ae95ee6f332a98ec08-2400x1260.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">Anthropic / Mozilla</div>
+    <h3>Claude, Firefox 취약점 22개 발견 — AI 보안 검증 새 시대</h3>
+    <div class="summary">Anthropic의 Claude Opus 4.6이 Mozilla와 협업해 2주 만에 Firefox에서 22개 보안 취약점을 발견했습니다. 이 중 14개는 고위험으로 분류되어 즉시 수정되었습니다. AI가 사이버 보안 분야에서도 실질적인 성과를 내기 시작한 사례로, 기업 보안 점검에 AI 활용이 확대될 전망입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#Claude</span>
+      <span class="tag">#보안</span>
+      <span class="tag">#Firefox</span>
+    </div>
+    <div class="detail-content">
+      <strong>의미:</strong><br>
+      • AI가 코드 리뷰, 취약점 탐지에서 인간 전문가 수준 도달<br>
+      • 기업들의 AI 보안 도구 도입 가속화 예상<br>
+      • 개인 개발자도 Claude Code로 보안 점검 가능<br><br>
+      <strong>일반 사용자 조치:</strong> Firefox 최신 버전으로 업데이트하세요. 해당 취약점은 모두 패치 완료되었습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.anthropic.com/news" target="_blank">Anthropic 뉴스룸 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 5. 비개발자를 위한 AI 소식 -->
+<div class="section">
+  <div class="section-title">🙋 비개발자를 위한 AI 소식</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://www.androidheadlines.com/wp-content/uploads/2018/10/Google-Home-Hub-New-Logo-AH-NS-31.jpg" alt="Gemini 스마트홈" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">Google / Android Headlines</div>
+    <h3>Gemini for Home — 스마트홈이 40% 더 빨라졌다</h3>
+    <div class="summary">Google Home의 Gemini AI가 3월 업데이트로 응답 속도 40% 향상, 알람/타이머 기능 개선, 더 똑똑한 자동화를 제공합니다. "퇴근하면 조명 켜고 에어컨 24도로 맞춰줘" 같은 복잡한 명령도 이해합니다. 캐나다(불어 포함), 유럽, 아시아로 서비스 확대 중이며, 한국 지원도 곧 예정입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">설정 후 자동</span>
+      <span class="tag free">무료</span>
+      <span class="tag">#스마트홈</span>
+      <span class="tag">#생활편의</span>
+    </div>
+    <div class="detail-content">
+      <strong>새로운 기능:</strong><br>
+      • 응답 속도 40% 향상<br>
+      • 복잡한 조건부 자동화 지원 ("비 오면 창문 닫아줘")<br>
+      • Home Brief: 아침에 오늘 일정, 날씨, 뉴스 요약 제공<br>
+      • 스마트 카메라 AI 분석 기능 추가<br><br>
+      <strong>필요 기기:</strong> Google Nest Hub, Nest 스피커 또는 호환 스마트홈 기기<br>
+      <strong>설정:</strong> Google Home 앱 → Gemini 기능 활성화
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.androidheadlines.com/2026/03/google-gemini-for-home-gets-40-faster-response-time-in-march-2026-update.html" target="_blank">자세히 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.theneuron.ai/Gemini_Generated_Image_w7ejazw7ejazw7ej.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">The Neuron / Tom's Guide</div>
+    <h3>2026년 AI 활용 핵심 팁 — ChatGPT·Claude·Gemini 용도별 사용법</h3>
+    <div class="summary">2026년 AI 활용의 핵심은 "상황에 맞는 도구 선택"입니다. ChatGPT는 빠른 검색과 수학, Claude는 글쓰기와 복잡한 추론, Gemini는 구글 생태계 연동과 대용량 문서 처리에 강합니다. 세 가지를 상황별로 사용하면 각각 쓸 때보다 생산성이 크게 올라갑니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#ChatGPT</span>
+      <span class="tag">#Claude</span>
+      <span class="tag">#Gemini</span>
+      <span class="tag">#생산성</span>
+    </div>
+    <div class="detail-content">
+      <strong>용도별 추천:</strong><br><br>
+      <strong>ChatGPT 추천 상황:</strong><br>
+      • 빠른 질문/답변, 웹 검색 필요할 때<br>
+      • 수학/계산 문제<br>
+      • 플러그인/GPTs 활용이 필요할 때<br><br>
+      <strong>Claude 추천 상황:</strong><br>
+      • 긴 글 작성 (보고서, 이메일, 블로그)<br>
+      • 복잡한 논리/추론이 필요할 때<br>
+      • 정확한 사실 확인이 중요할 때<br><br>
+      <strong>Gemini 추천 상황:</strong><br>
+      • 구글 드라이브/Gmail/캘린더 연동 작업<br>
+      • 긴 문서 분석 (100페이지+ PDF)<br>
+      • 빠른 속도가 필요할 때<br><br>
+      <strong>프로 팁:</strong> Projects(Claude) 또는 Custom GPT(ChatGPT)에 자주 쓰는 문서, 스타일 가이드를 업로드해두면 매번 설명할 필요 없이 일관된 결과를 얻습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.theneuron.ai/ai-news-digests/the-neurons-ai-skill-of-the-day-digest-march-2026/" target="_blank">전체 팁 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/updated_blog_hero_image_-_social_1.width-1300.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+    <div class="source">Google TV</div>
+    <h3>Google TV에 Gemini AI 기능 추가 — TV로 공부하고 스포츠 요약 받기</h3>
+    <div class="summary">Google TV에 세 가지 Gemini AI 기능이 추가됩니다. 'Deep Dives'는 관심 주제를 인터랙티브하게 학습하는 기능, 'Sports Briefs'는 NBA·MLB 등 경기 결과를 AI가 요약해주는 기능, 그리고 향상된 음성 도움말입니다. 호주, 뉴질랜드, 영국에서 먼저 출시되며 점차 확대됩니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#GoogleTV</span>
+      <span class="tag">#Gemini</span>
+      <span class="tag">#스포츠</span>
+    </div>
+    <div class="detail-content">
+      <strong>새 기능 상세:</strong><br><br>
+      <strong>Deep Dives (딥 다이브):</strong><br>
+      • "우주의 블랙홀에 대해 알려줘" → TV에서 시각적 학습 세션 시작<br>
+      • 가족이 함께 보며 배우는 교육용 기능<br><br>
+      <strong>Sports Briefs (스포츠 브리프):</strong><br>
+      • "어젯밤 NBA 경기 결과 알려줘" → AI가 하이라이트 요약<br>
+      • NBA, NHL, MLB, MLS 지원<br><br>
+      <strong>출시 지역:</strong> 호주, 뉴질랜드, 영국 (2026년 봄), 한국 출시 미정
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://blog.google/products-and-platforms/platforms/google-tv/new-gemini-features-march-2026/" target="_blank">Google 공식 블로그 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 6. AI 커뮤니티 반응 -->
+<div class="section">
+  <div class="section-title">💬 AI 커뮤니티 반응</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="source">Threads / Medium</div>
+      <h3>"Claude가 새 베프, ChatGPT는 이제 끝" — AI 팬덤 전쟁</h3>
+      <div class="summary">Threads에서 "Claude.ai is my new best friend and ChatGPT is dead to me"라는 게시물이 화제입니다. 글쓰기와 정확성에서 Claude를 선호하는 사용자가 늘면서 AI 플랫폼별 '팬덤'이 형성되고 있습니다. 반면 ChatGPT는 범용성과 플러그인 생태계로 여전히 강세입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag">#Claude</span>
+        <span class="tag">#ChatGPT</span>
+        <span class="tag">#커뮤니티</span>
+      </div>
+      <div class="detail-content">
+        <strong>사용자들의 평가:</strong><br><br>
+        <strong>Claude 선호 이유:</strong><br>
+        • 글쓰기가 더 자연스럽고 인간적<br>
+        • 팩트 체크에서 더 정확<br>
+        • 긴 문서 분석 능력 우수<br><br>
+        <strong>ChatGPT 선호 이유:</strong><br>
+        • 플러그인, Custom GPT 생태계<br>
+        • 웹 검색 통합<br>
+        • 더 빠른 응답 속도<br><br>
+        <strong>현명한 접근:</strong> 둘 다 무료 티어가 있으니 직접 비교해보고 용도에 맞게 선택하세요.
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.threads.net/@timisenman/post/C8vNHMFSYU-/" target="_blank">Threads 원문 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source">Threads</div>
+      <h3>콘텐츠 크리에이터들의 AI 사용법 — ChatGPT vs Claude 역할 분담</h3>
+      <div class="summary">"콘텐츠 크리에이터라면 ChatGPT와 Claude 둘 다 쓰세요"라는 게시물이 공감을 얻고 있습니다. ChatGPT는 아이디어 브레인스토밍과 빠른 초안에, Claude는 최종 다듬기와 긴 콘텐츠 작성에 활용하는 방식이 인기입니다. 두 도구의 강점을 조합하면 콘텐츠 품질이 확연히 올라간다는 후기가 많습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag">#크리에이터</span>
+        <span class="tag">#콘텐츠</span>
+        <span class="tag">#워크플로우</span>
+      </div>
+      <div class="detail-content">
+        <strong>추천 워크플로우:</strong><br><br>
+        1단계: ChatGPT에게 "OO 주제로 블로그 글 아이디어 10개"<br>
+        2단계: 마음에 드는 아이디어 선택 → ChatGPT로 빠른 초안<br>
+        3단계: Claude에게 "이 글을 더 자연스럽고 전문적으로 다듬어줘"<br>
+        4단계: Claude의 결과물로 최종 발행<br><br>
+        <strong>비용 팁:</strong> 둘 다 무료 티어로 시작하고, 자주 쓰는 쪽만 유료 구독
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.threads.net/@digitalclaudiafaceless/post/DA3de3eqrMR" target="_blank">Threads 원문 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source">Threads</div>
+      <h3>"모든 AI를 한 곳에서" — 멀티 AI 플랫폼 관심 급증</h3>
+      <div class="summary">"ChatGPT, Claude, Gemini, DeepSeek을 한 곳에서 쓸 수 있다니!" 멀티 AI 플랫폼을 소개하는 영상이 Threads에서 화제입니다. 하나의 인터페이스에서 여러 AI를 비교하며 쓸 수 있어, 상황에 맞는 최적의 AI를 선택하기 쉬워졌습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag">#멀티AI</span>
+        <span class="tag">#Poe</span>
+        <span class="tag">#생산성</span>
+      </div>
+      <div class="detail-content">
+        <strong>멀티 AI 플랫폼 예시:</strong><br><br>
+        <strong>Poe (poe.com):</strong><br>
+        • ChatGPT, Claude, Gemini 등 여러 AI를 한 곳에서<br>
+        • 무료 티어 제공, 월 $20으로 모든 모델 무제한<br><br>
+        <strong>장점:</strong><br>
+        • 같은 질문을 여러 AI에게 던져 비교 가능<br>
+        • 각 AI의 구독료를 따로 내지 않아도 됨<br>
+        • 모바일 앱도 지원<br><br>
+        <strong>주의:</strong> 최신 기능(컴퓨터 사용 등)은 공식 앱에서만 지원
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.threads.net/@mr.shajiali/post/DHY4pS7iZF7/" target="_blank">Threads 원문 →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. 트렌드 키워드 -->
+<div class="section">
+  <div class="section-title">📈 트렌드 키워드</div>
+  <div class="keywords">
+    <span class="keyword hot">에이전틱 AI</span>
+    <span class="keyword hot">컴퓨터 사용</span>
+    <span class="keyword hot">베라 루빈</span>
+    <span class="keyword hot">AI 바우처</span>
+    <span class="keyword hot">노코드 자동화</span>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Generated by Claude AI · 2026년 03월 25일 09:00 KST</p>
+  <p style="margin-top: 12px;"><a href="https://www.threads.com/@calmtiger_" target="_blank">@Calmtiger_</a></p>
+  <p style="margin-top: 24px;">
+    <a href="https://page.stibee.com/subscriptions/480199" target="_blank" style="background: linear-gradient(135deg, #FFD166, #E07B0A); color: #1a1a1a; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 600; margin-right: 8px;">🎁 얼리버드 구독 (첫 달 무료)</a>
+    <a href="https://page.stibee.com/subscriptions/480200" target="_blank" style="color: #FFD166; font-size: 0.85em; text-decoration: none;">정상가 구독 →</a>
+  </p>
+</div>
+</body>
+</html>
