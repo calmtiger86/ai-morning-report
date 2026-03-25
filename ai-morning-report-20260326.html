@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 트렌드 모닝 리포트 - 2026년 03월 26일</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #fff; line-height: 1.7; font-size: 16px; }
+  .header { background: linear-gradient(135deg, #FFD166, #E07B0A); padding: 44px 24px; text-align: center; }
+  .header .subtitle { font-size: 1.15em; font-weight: 600; opacity: 0.9; margin-bottom: 10px; letter-spacing: -0.3px; }
+  .header h1 { font-size: 2.2em; font-weight: 800; }
+  .header .date { opacity: 0.75; margin-top: 10px; font-size: 1em; }
+  .section { padding: 28px 20px; border-bottom: 1px solid #1f1f1f; }
+  .section-title { font-size: 1.35em; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .card { background: #111; border-radius: 14px; padding: 20px; margin-bottom: 16px; border: 1px solid #222; overflow: hidden; }
+  .card-img-wrap { width: calc(100% + 40px); margin: -20px -20px 16px -20px; height: 180px; overflow: hidden; }
+  .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .source { font-size: 0.82em; color: #555; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .card h3 { font-size: 1.08em; font-weight: 700; margin-bottom: 10px; line-height: 1.5; }
+  .card .summary { font-size: 0.97em; color: #bbb; line-height: 1.7; }
+  .card details { float: right; margin: 12px 0 0 10px; }
+  .card details summary {
+    list-style: none;
+    display: inline;
+    background: none;
+    border: none;
+    color: #FFD166;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    user-select: none;
+  }
+  .card details summary::-webkit-details-marker { display: none; }
+  .card details summary::marker { display: none; }
+  .card details summary .btn-close { display: none; }
+  .card details[open] summary .btn-open { display: none; }
+  .card details[open] summary .btn-close { display: inline; }
+  .card .detail-content { display: none; clear: both; font-size: 0.97em; color: #bbb; line-height: 1.7; margin-top: 12px; border-top: 1px solid #222; padding-top: 12px; }
+  .card details[open] ~ .detail-content { display: block; }
+  .card-footer { display: none; clear: both; align-items: center; justify-content: space-between; margin-top: 14px; flex-wrap: wrap; gap: 8px; }
+  .card details[open] ~ .card-footer { display: flex; }
+  .card a.link { color: #FFD166; font-size: 0.9em; text-decoration: none; }
+  .card a.link:hover { text-decoration: underline; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { background: #1f1f1f; border-radius: 20px; padding: 4px 12px; font-size: 0.8em; color: #999; }
+  .tag.free { background: #052e16; color: #4ade80; border: 1px solid #166534; }
+  .tag.paid { background: #1c1917; color: #fb923c; border: 1px solid #9a3412; }
+  .tag.easy { background: #0c1a2e; color: #60a5fa; border: 1px solid #1e40af; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 12px; padding: 4px 0 10px; }
+  .keyword { background: linear-gradient(135deg, #1f1f1f, #2a2a2a); border: 1px solid #333; border-radius: 30px; padding: 10px 22px; font-size: 1em; }
+  .keyword.hot { background: linear-gradient(135deg, #FFD166, #E07B0A); border-color: #E07B0A; color: #1a1a1a; }
+  .highlight { color: #f59e0b; }
+  .footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9em; }
+  .footer a { color: #FFD166; text-decoration: none; font-size: 1em; font-weight: 600; }
+  @media (max-width: 480px) {
+    body { font-size: 17px; }
+    .header h1 { font-size: 1.9em; }
+    .section-title { font-size: 1.25em; }
+    .card h3 { font-size: 1.1em; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="subtitle">일반인·소상공인·1인기업을 위한 AI 실용 가이드</div>
+  <h1>🤖 AI 트렌드 모닝 리포트</h1>
+  <div class="date">2026년 03월 26일</div>
+  <div style="margin-top: 18px; margin-bottom: 10px;">
+    <a href="https://page.stibee.com/subscriptions/480199" target="_blank" style="background: rgba(0,0,0,0.25); color: #1a1a1a; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 0.88em; font-weight: 700; margin-right: 8px; border: 1px solid rgba(0,0,0,0.3);">🎁 얼리버드 구독</a>
+    <a href="https://page.stibee.com/subscriptions/480200" target="_blank" style="color: #1a1a1a; font-size: 0.85em; text-decoration: none; opacity: 0.7;">정상가 구독 →</a>
+  </div>
+</div>
+
+<!-- 1. 오늘의 빅 뉴스 -->
+<div class="section">
+  <div class="section-title">🔥 오늘의 빅 뉴스</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://cdn.aitimes.com/news/photo/202603/208313_210628_4218.jpg" alt="오픈AI 소라 종료" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">AI타임스</div>
+    <h3>오픈AI, 영상 생성 앱 '소라(Sora)' 6개월 만에 전격 종료 — 디즈니 10억 달러 투자도 철회</h3>
+    <div class="summary">오픈AI가 2025년 9월 출시한 AI 영상 생성 서비스 '소라'를 약 6개월 만에 종료합니다. 런웨이, 루마 등 경쟁 서비스 급증과 막대한 컴퓨팅 비용, 저작권 문제가 원인입니다. 디즈니와의 약 1조 5천억 원 규모 협력도 취소됐으며, 오픈AI는 코딩·에이전트 중심의 B2B 전략으로 방향을 전환합니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#OpenAI</span>
+      <span class="tag">#영상생성AI</span>
+      <span class="tag">#전략전환</span>
+    </div>
+    <div class="detail-content">
+      <strong>종료 배경:</strong> 런웨이(Runway), 루마(Luma), 클링(Kling) 등 경쟁 서비스가 급증하면서 소라의 기술적 차별성이 약화됐습니다. 또한 영상 생성에 필요한 막대한 GPU 비용 대비 수익 모델이 부재했고, 저작권 관련 신뢰 문제가 지속됐습니다.<br><br>
+      <strong>디즈니 투자 철회:</strong> 스타워즈, 마블, 픽사 등 디즈니 IP를 활용한 약 10억 달러(약 1조 5천억 원) 규모의 협력이 취소됐습니다.<br><br>
+      <strong>향후 방향:</strong> 오픈AI는 챗GPT, 코덱스(Codex), AI 브라우저를 통합한 '슈퍼 앱' 개발을 추진하며, 소라 인력은 로보틱스 및 물리 세계 시뮬레이션 연구로 재배치됩니다.<br><br>
+      <strong>나에게 어떤 영향?</strong> 영상 AI를 활용하던 크리에이터는 런웨이(Runway)나 픽버스(Pika) 등 대체 서비스로 전환을 고려해야 합니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.aitimes.com/news/articleView.html?idxno=208313" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://cdn.aitimes.com/news/photo/202603/208357_210621_162.png" alt="메타 하이퍼에이전트" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">AI타임스</div>
+    <h3>메타, '스스로 배우는 방법까지 바꾸는' 자가 진화형 AI '하이퍼에이전트' 발표</h3>
+    <div class="summary">메타 연구진이 학습 규칙 자체를 재설계하는 '메타인지적 자기 수정' 능력을 갖춘 AI '하이퍼에이전트(HyperAgents)'를 공개했습니다. 기존 AI가 인간이 설계한 틀 안에서만 발전했다면, 이 시스템은 스스로 더 나은 학습 방법을 찾아갑니다. 코딩, 수학, 로봇 제어 등 다양한 분야에서 성능 향상이 확인됐습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#Meta</span>
+      <span class="tag">#AGI</span>
+      <span class="tag">#자가진화AI</span>
+    </div>
+    <div class="detail-content">
+      <strong>핵심 기술:</strong> '과제 수행 에이전트'와 '자기 개선 에이전트'를 통합한 구조로, 계획→실행→검증 반복 루프를 기반으로 작동합니다.<br><br>
+      <strong>차별점:</strong> 웹 검색, 코드 실행, 데이터 분석 등 다양한 도구를 유기적으로 연결하며, 한 분야에서 습득한 개선 전략을 다른 분야에도 적용할 수 있습니다.<br><br>
+      <strong>자체 도구 생성:</strong> 성능 추적, 장기 메모리, 연산 자원 관리 기능을 인간 개입 없이 스스로 구축합니다.<br><br>
+      <strong>의미:</strong> 연구진은 이 기술이 "AI가 더 나은 학습 방법 자체를 설계하는 단계로 나아가는 전환점"이며 AGI 진입의 핵심 이정표가 될 것이라고 밝혔습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.aitimes.com/news/articleView.html?idxno=208357" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://cdn.aitimes.com/news/photo/202603/208363_210629_4650.jpg" alt="앤트로픽 오토모드" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">AI타임스</div>
+    <h3>앤트로픽(Anthropic), 개발자 승인 없이 스스로 위험 거르는 '오토 모드' 공개</h3>
+    <div class="summary">앤트로픽이 클로드 코드(Claude Code)에 새로운 '오토 모드(Auto Mode)'를 추가했습니다. AI가 각 작업 전에 위험도를 자동으로 평가해, 안전한 작업은 자동 실행하고 위험한 작업만 사용자 승인을 요청합니다. 개발자의 '승인 피로'를 줄이면서도 안전성을 유지하는 것이 목표입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#Claude</span>
+      <span class="tag">#Anthropic</span>
+      <span class="tag">#자율코딩</span>
+    </div>
+    <div class="detail-content">
+      <strong>작동 방식:</strong> AI 기반 분류기가 각 작업 전 위험 수준을 평가합니다. 대량 파일 삭제, 민감 데이터 유출, 악성 코드 실행 등 위험 행동은 자동 차단되고, 안전한 작업은 자동 실행됩니다.<br><br>
+      <strong>사용 방법:</strong> 명령줄에서 `claude --enable-auto-mode`로 활성화하며, Claude Sonnet 4.6과 Opus 4.6에서 사용 가능합니다.<br><br>
+      <strong>주의사항:</strong> 앤트로픽은 완전한 안전을 보장하지 않으므로 샌드박스 환경에서 사용을 권장합니다.<br><br>
+      <strong>나에게 어떤 영향?</strong> 개발자가 아니더라도, AI 코딩 도구가 점점 더 자율적으로 작동하는 추세를 보여주는 중요한 이정표입니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.aitimes.com/news/articleView.html?idxno=208363" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 2. 이번 주 써볼 만한 AI 도구 -->
+<div class="section">
+  <div class="section-title">🛠 이번 주 써볼 만한 AI 도구</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/03/Granola-home.jpeg" alt="Granola AI" onerror="this.parentElement.style.display='none'"></div>
+      <div class="source">TechCrunch</div>
+      <h3>Granola — 회의록 자동 정리 AI가 기업용 앱으로 진화</h3>
+      <div class="summary">이런 분께 추천: 매일 미팅이 많은 팀장, 프리랜서 컨설턴트, 1인 에이전시 대표. Granola는 회의 내용을 자동으로 요약하고 액션 아이템을 추출해주는 AI 도구입니다. 최근 1.5조 원 기업가치로 1,500억 원 투자를 유치하며 단순 회의록을 넘어 기업용 AI 플랫폼으로 확장 중입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">설치불필요</span>
+        <span class="tag free">무료 플랜</span>
+        <span class="tag paid">Pro 월 $12</span>
+        <span class="tag">#회의록</span>
+        <span class="tag">#생산성</span>
+      </div>
+      <div class="detail-content">
+        <strong>1단계:</strong> granola.so에 가입 후 Google 캘린더 연동<br>
+        <strong>2단계:</strong> Zoom/Meet/Teams 회의 시작 시 자동 녹음 및 요약<br>
+        <strong>3단계:</strong> 회의 후 요약본과 액션 아이템을 이메일/슬랙으로 자동 전송<br><br>
+        <strong>무료/유료:</strong> 기본 기능 무료, Pro 플랜 월 $12(약 16,000원)<br>
+        <strong>한국어 지원:</strong> 영어 기반이나 한국어 회의도 인식 가능 (정확도 다소 낮음)
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.granola.so" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/03/Lyria-3-Pro_thumbnail.jpeg" alt="Google Lyria 3 Pro" onerror="this.parentElement.style.display='none'"></div>
+      <div class="source">Google</div>
+      <h3>Lyria 3 Pro — 구글의 AI 음악 생성, 3분짜리 트랙 제작 가능</h3>
+      <div class="summary">이런 분께 추천: 유튜버, 팟캐스터, SNS 콘텐츠 크리에이터, 소규모 광고 영상 제작자. 구글이 새로 출시한 Lyria 3 Pro는 기존 30초에서 최대 3분 길이의 음악 트랙을 AI로 생성할 수 있습니다. 저작권 걱정 없이 배경음악이 필요한 모든 분께 유용합니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">웹에서 바로</span>
+        <span class="tag free">Gemini에서 무료</span>
+        <span class="tag">#음악생성</span>
+        <span class="tag">#크리에이터</span>
+      </div>
+      <div class="detail-content">
+        <strong>1단계:</strong> Gemini 앱 또는 Google AI Studio 접속<br>
+        <strong>2단계:</strong> "밝은 분위기의 3분짜리 팝 배경음악 만들어줘" 같은 프롬프트 입력<br>
+        <strong>3단계:</strong> 생성된 음악 다운로드 후 영상에 삽입<br><br>
+        <strong>무료/유료:</strong> Gemini 무료 버전에서 기본 사용 가능<br>
+        <strong>한국어 지원:</strong> 한국어 프롬프트 지원
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://gemini.google.com" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.prod.website-files.com/6777c60fe010fa2ddf45acb6/6814fc5c38b42bdf04c12784_Open%20Graph.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+      <div class="source">Noloco</div>
+      <h3>Noloco + Nola AI — 말로 설명하면 앱이 만들어지는 노코드 플랫폼</h3>
+      <div class="summary">이런 분께 추천: CRM, 고객 포털, 내부 관리 도구가 필요한 소규모 팀. "고객 관리 앱 만들어줘"라고 말하면 AI 비서 'Nola'가 테이블, 관계, 워크플로우를 자동으로 생성합니다. 에어테이블이나 구글 시트와 연동되어 기존 데이터를 바로 활용할 수 있습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">코딩 불필요</span>
+        <span class="tag free">무료 플랜</span>
+        <span class="tag">#노코드</span>
+        <span class="tag">#CRM</span>
+        <span class="tag">#1인기업</span>
+      </div>
+      <div class="detail-content">
+        <strong>1단계:</strong> noloco.io 가입 후 "Build with AI" 선택<br>
+        <strong>2단계:</strong> 원하는 앱을 자연어로 설명 (예: "고객 연락처와 거래 내역을 관리하는 CRM")<br>
+        <strong>3단계:</strong> AI가 생성한 앱을 드래그앤드롭으로 커스터마이징<br><br>
+        <strong>무료/유료:</strong> 기본 무료, 팀 기능은 월 $49부터<br>
+        <strong>한국어 지원:</strong> 영어 기반, 인터페이스는 영어
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://noloco.io" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source">Product Hunt</div>
+      <h3>Klariqo — 3분 만에 설정하는 AI 전화 응대 비서</h3>
+      <div class="summary">이런 분께 추천: 카페, 미용실, 병원 등 전화 예약이 많은 소상공인. Klariqo는 코딩 없이 3분 만에 설정할 수 있는 AI 음성 비서입니다. 전화 응대, 예약 접수, 캘린더 자동 등록까지 처리하며, 영업시간 외 문의도 AI가 대신 받아줍니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">5분 설정</span>
+        <span class="tag free">14일 무료체험</span>
+        <span class="tag paid">월 $29~</span>
+        <span class="tag">#소상공인</span>
+        <span class="tag">#전화응대</span>
+      </div>
+      <div class="detail-content">
+        <strong>1단계:</strong> klariqo.com 가입 후 업종 선택 (카페, 병원, 미용실 등)<br>
+        <strong>2단계:</strong> 응대 스크립트 템플릿 선택 및 커스터마이징<br>
+        <strong>3단계:</strong> 전화번호 연결 후 바로 사용<br><br>
+        <strong>무료/유료:</strong> 14일 무료 체험, 이후 월 $29(약 39,000원)부터<br>
+        <strong>한국어 지원:</strong> 영어 기반, 한국어 지원 예정
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.producthunt.com/products/klariqo" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 3. 소상공인·N잡러·1인 크리에이터 AI 활용법 -->
+<div class="section">
+  <div class="section-title">💼 소상공인·N잡러·1인 크리에이터 AI 활용법</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1467844599.jpg" alt="Meta AI Shopping" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">TechCrunch</div>
+    <h3>메타, 인스타그램·페이스북 쇼핑에 AI 도입 — 소상공인 판매자 주목</h3>
+    <div class="summary">이런 분께 추천: 인스타그램/페이스북에서 제품을 판매하는 소상공인, 스마트스토어 운영자. 메타가 인스타그램과 페이스북에 AI 기반 쇼핑 기능을 배포합니다. AI가 상품 정보를 더 풍부하게 노출시켜 구매 전환율을 높여주며, 판매자는 별도 설정 없이 자동으로 혜택을 받을 수 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">자동 적용</span>
+      <span class="tag free">무료</span>
+      <span class="tag">#인스타그램</span>
+      <span class="tag">#쇼핑몰</span>
+      <span class="tag">#수익화</span>
+    </div>
+    <div class="detail-content">
+      <strong>활용 방법:</strong><br>
+      1. 인스타그램/페이스북 샵에 상품 등록 시 상세한 설명과 고품질 이미지 업로드<br>
+      2. AI가 자동으로 상품 태그, 추천 문구, 관련 제품 연결 생성<br>
+      3. 고객이 브라우징할 때 AI가 맞춤 추천으로 노출 증가<br><br>
+      <strong>기대 효과:</strong> 별도 광고비 없이도 상품 발견율과 구매 전환율 향상. 메타는 이 기능으로 소상공인의 매출이 평균 15-20% 증가할 것으로 예측합니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://techcrunch.com/2026/03/25/meta-turns-to-ai-to-make-shopping-easier-on-instagram-and-facebook/" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cphoto.asiae.co.kr/listimglink/1/2024052314052582217_1716440725.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">아시아경제 / AI매터스</div>
+    <h3>데이터 라벨링 부업 — 스마트폰으로 AI 가르치며 월 50~100만원 벌기</h3>
+    <div class="summary">이런 분께 추천: 재택근무를 원하는 주부, 대학생, 투잡을 찾는 직장인. 데이터 라벨링은 AI가 학습할 수 있도록 이미지나 텍스트에 태그를 다는 작업입니다. 자격증 없이 누구나 시작 가능하며, 스마트폰으로도 할 수 있어 '틈새 시간 활용' 부업으로 인기입니다. 시장 규모가 39조 원으로 성장 중입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">앱 설치만</span>
+      <span class="tag free">무료 시작</span>
+      <span class="tag">#N잡</span>
+      <span class="tag">#부업</span>
+      <span class="tag">#재택근무</span>
+    </div>
+    <div class="detail-content">
+      <strong>시작 방법:</strong><br>
+      1. 크라우드웍스, 에이모, 테스트웍스 등 데이터 라벨링 플랫폼 가입<br>
+      2. 간단한 교육 이수 (보통 1~2시간)<br>
+      3. 원하는 프로젝트 선택 후 작업 시작<br><br>
+      <strong>수입 예상:</strong> 시간당 1~2만원, 하루 3시간 기준 월 50~100만원 가능<br>
+      <strong>장점:</strong> 시간/장소 자유, 자격 요건 없음, AI 성장과 함께 일감 증가<br>
+      <strong>주의:</strong> 초반 단가가 낮을 수 있으니 여러 플랫폼을 비교해보세요
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.asiae.co.kr/article/2024052315285295158" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">GPTers / 브런치</div>
+    <h3>ChatGPT + Canva 조합으로 카드뉴스 10분 만에 100장 제작하기</h3>
+    <div class="summary">이런 분께 추천: SNS 마케팅 담당자, 퍼스널 브랜딩 중인 N잡러, 콘텐츠 크리에이터. ChatGPT가 원고를 작성하고 Canva가 디자인하는 조합으로, 하루 8시간 걸리던 카드뉴스 제작을 10분으로 단축할 수 있습니다. GPT Store의 'Canva GPT'를 활용하면 템플릿까지 자동 적용됩니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">설치불필요</span>
+      <span class="tag free">무료</span>
+      <span class="tag">#카드뉴스</span>
+      <span class="tag">#SNS자동화</span>
+      <span class="tag">#퍼스널브랜딩</span>
+    </div>
+    <div class="detail-content">
+      <strong>1단계 (1~3분):</strong> ChatGPT에 "인스타그램 카드뉴스 10장 기획해줘. 주제: [원하는 주제]"라고 요청 → 제목, 본문, 해시태그까지 생성<br><br>
+      <strong>2단계 (4~7분):</strong> GPT Store에서 'Canva' 검색 → "이 내용으로 인스타 카드뉴스 만들어줘" 입력 → 템플릿 자동 적용<br><br>
+      <strong>3단계 (8~10분):</strong> 생성된 링크에서 텍스트/색상만 미세 조정 후 다운로드<br><br>
+      <strong>꿀팁:</strong> Claude 3.7을 사용하면 HTML 코드 기반의 더 커스터마이징 가능한 카드뉴스도 제작할 수 있습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://brunch.co.kr/@prman/129" target="_blank">바로 써보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">Zapier / HubSpot</div>
+    <h3>Zapier AI로 이메일·SNS·CRM 자동화 — 주 10시간 절약하기</h3>
+    <div class="summary">이런 분께 추천: 1인 사업자, 프리랜서, 소규모 마케팅 팀. Zapier의 새 AI 기능은 "매주 금요일 매출 요약을 팀에 이메일로 보내줘"처럼 자연어 명령만으로 자동화를 설정할 수 있습니다. 7,000개 이상의 앱과 연동되어 CRM, 이메일, SNS, 스프레드시트를 하나로 연결합니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">코딩 불필요</span>
+      <span class="tag free">월 100건 무료</span>
+      <span class="tag paid">월 $20~</span>
+      <span class="tag">#업무자동화</span>
+      <span class="tag">#프리랜서</span>
+    </div>
+    <div class="detail-content">
+      <strong>인기 자동화 예시:</strong><br>
+      • 고객 문의 이메일 → AI가 분류 → 담당자에게 자동 배정<br>
+      • 인스타 DM 문의 → 스프레드시트 자동 기록 + 알림 전송<br>
+      • 결제 완료 → 고객에게 환영 이메일 + CRM 업데이트<br><br>
+      <strong>시작 방법:</strong><br>
+      1. zapier.com 가입<br>
+      2. "Make a Zap with AI" 클릭<br>
+      3. 원하는 자동화를 자연어로 설명<br><br>
+      <strong>ROI:</strong> 소기업 평균 월 $50~$300 투자로 3~5배 생산성 향상
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://zapier.com/blog" target="_blank">바로 써보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 4. 국내 AI 소식 -->
+<div class="section">
+  <div class="section-title">🇰🇷 국내 AI 소식</div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://www.ehom.kr/news/2026/01/19/1824fc05d04b1ffc8a57e3199d044fd1112448_thumb.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">한국인공지능산업협회</div>
+    <h3>'K-AI 국가대표 100선' 발표 — 국내 AI 생태계 판도 변화 예고</h3>
+    <div class="summary">한국인공지능산업협회(AIIA)가 2026년 국내 경제를 이끌 '이머징 AI+X 톱100' 기업을 발표했습니다. 약 2,400개 후보군에서 선정된 100개 기업은 AI 기술 상용화와 산업 간 융합을 주도할 것으로 기대됩니다. 소상공인도 이들 기업의 서비스를 통해 AI 도입 기회를 얻을 수 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#K-AI</span>
+      <span class="tag">#스타트업</span>
+      <span class="tag">#산업동향</span>
+    </div>
+    <div class="detail-content">
+      <strong>선정 의미:</strong> 향후 수년간 국내 디지털 전환(DX)의 핵심 동력을 공식화한 것으로, 투자·협업 시 참고할 수 있는 공신력 있는 목록입니다.<br><br>
+      <strong>활용 방법:</strong><br>
+      • 사업에 적합한 AI 솔루션 제공 기업 탐색<br>
+      • 정부 지원사업 연계 시 협력 파트너 물색<br>
+      • AI 도입 컨설팅 및 기술 지원 문의
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://newsyonhap.com/news/82816" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.aitimes.kr/news/thumbnail/202603/39244_59382_447_v150.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">인공지능신문</div>
+    <h3>네이버, SME 대상 AI 강화 신규 광고 플랫폼 도입</h3>
+    <div class="summary">네이버가 중소기업(SME) 광고주를 위한 AI 기능 강화 광고 플랫폼을 도입합니다. AI가 광고 문구 생성, 타겟팅 최적화, 성과 분석까지 자동으로 처리해 마케팅 전문 인력이 없는 소상공인도 효율적인 광고 집행이 가능해집니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#네이버</span>
+      <span class="tag">#광고</span>
+      <span class="tag">#SME</span>
+    </div>
+    <div class="detail-content">
+      <strong>주요 기능:</strong><br>
+      • AI 광고 문구 자동 생성<br>
+      • 잠재 고객 타겟팅 최적화<br>
+      • 실시간 성과 분석 및 예산 조정 추천<br><br>
+      <strong>기대 효과:</strong> 광고 대행사 비용 절감, 직접 운영 가능한 간편한 인터페이스 제공
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.aitimes.kr/news/articleView.html?idxno=39244" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.aitimes.com/news/photo/202603/208356_210633_468.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">AI타임스</div>
+    <h3>라이너, 학술 AI로 학생층 공략 — "반년 만에 학교 계정 7배 증가"</h3>
+    <div class="summary">국내 AI 스타트업 라이너(Liner)가 학술 AI 서비스로 교육 시장 확대에 나섭니다. 반년 만에 학교 계정이 7배 증가하며 빠른 성장세를 보이고 있어, 대학생·연구자뿐 아니라 학습 콘텐츠 제작자에게도 유용한 도구가 될 전망입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#라이너</span>
+      <span class="tag">#학술AI</span>
+      <span class="tag">#교육</span>
+    </div>
+    <div class="detail-content">
+      <strong>라이너 특징:</strong> 웹 브라우징 중 중요 정보 하이라이트, AI 요약, 논문 검색 및 정리<br><br>
+      <strong>활용 예시:</strong><br>
+      • 학생: 논문 검색·요약·인용 정리 자동화<br>
+      • 콘텐츠 크리에이터: 리서치 시간 단축<br>
+      • 소상공인: 시장 조사 자료 빠르게 정리
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.aitimes.com/news/articleView.html?idxno=208356" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">중소벤처기업부</div>
+    <h3>2026년 소상공인 AI 활용 지원사업 144억 원 투입 — 역대 최대 규모</h3>
+    <div class="summary">중기부가 소상공인의 AI·디지털 전환을 위해 역대 최대 5.4조 원 예산을 편성했습니다. 특히 '혁신 소상공인 AI 활용 지원'에 144억 원이 신규 투입되어, 제품 개발·고객 응대·서비스 공정에 AI를 접목할 수 있습니다. 3월부터 스마트상점 기술보급사업 모집도 시작됐습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#정부지원</span>
+      <span class="tag">#소상공인</span>
+      <span class="tag">#스마트상점</span>
+    </div>
+    <div class="detail-content">
+      <strong>주요 지원 내용:</strong><br>
+      • 혁신 소상공인 AI 활용 지원: 144억 원 (신설)<br>
+      • 스마트상점 기술보급사업: 3월 10일 공고<br>
+      • 제조AI특화 스마트공장: 소상공인 대상 공장 AI화 지원<br><br>
+      <strong>신청 방법:</strong> 기업마당(bizinfo.go.kr) 또는 중소벤처기업부 홈페이지<br>
+      <strong>문의:</strong> 중소벤처통합콜센터 ☎ 1357<br><br>
+      <strong>한 장관 발언:</strong> "2026년은 소상공인이 AI와 디지털이라는 강력한 무기를 장착하고 새로운 성장의 시대를 여는 원년이 될 것"
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=86&bcIdx=1064370" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 5. 비개발자를 위한 AI 소식 -->
+<div class="section">
+  <div class="section-title">🙋 비개발자를 위한 AI 소식</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/03/IMG_0605.jpeg" alt="AI Skills Gap" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">TechCrunch / Anthropic</div>
+    <h3>AI 스킬 격차 심화 — "파워 유저가 앞서나가고 있다"</h3>
+    <div class="summary">앤트로픽 연구에 따르면 AI가 아직 일자리를 대체하진 않지만, AI를 잘 활용하는 '파워 유저'와 그렇지 않은 사람 간의 격차가 점점 벌어지고 있습니다. 같은 업무를 AI 활용자는 30% 빠르게 처리하며, 이는 향후 고용과 승진에도 영향을 미칠 전망입니다. 지금이 AI 학습을 시작할 때입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#스킬격차</span>
+      <span class="tag">#커리어</span>
+      <span class="tag">#자기계발</span>
+    </div>
+    <div class="detail-content">
+      <strong>연구 핵심:</strong> AI 숙련도에 따른 업무 효율 차이가 '디지털 디바이드' 수준으로 확대 중<br><br>
+      <strong>파워 유저가 되는 법:</strong><br>
+      1. 하루 한 가지 반복 업무를 AI로 대체해보기<br>
+      2. ChatGPT/Claude/Gemini 중 하나를 골라 2주간 집중 사용<br>
+      3. 유튜브/커뮤니티에서 활용 팁 꾸준히 학습<br><br>
+      <strong>추천 시작점:</strong> 이메일 초안 작성, 회의록 요약, 데이터 정리 등 저위험 작업부터
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://techcrunch.com/2026/03/25/the-ai-skills-gap-is-here-says-ai-company-and-power-users-are-pulling-ahead/" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/01/google-tv.webp" alt="Google TV Gemini" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">Google</div>
+    <h3>구글 TV에 Gemini AI 3가지 새 기능 — 스포츠 브리핑, 딥다이브, 비주얼 응답</h3>
+    <div class="summary">구글이 구글 TV에 Gemini 기반 3가지 새 기능을 출시했습니다. '스포츠 브리핑'으로 좋아하는 팀 경기 요약을 받고, '딥 다이브'로 건강·경제·기술 주제를 영상으로 깊이 탐구하며, '비주얼 응답'으로 질문에 맞춤형 시각 자료를 받을 수 있습니다. 리모컨으로 대화하듯 AI를 사용하세요.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#GoogleTV</span>
+      <span class="tag">#Gemini</span>
+      <span class="tag">#일상AI</span>
+    </div>
+    <div class="detail-content">
+      <strong>새 기능 상세:</strong><br>
+      • <strong>스포츠 브리핑:</strong> NBA, NHL, MLB, MLS 등 좋아하는 리그 하이라이트 나레이션으로 제공<br>
+      • <strong>딥 다이브:</strong> "다이어트 원리 알려줘" 같은 질문에 영상 형태의 심층 설명<br>
+      • <strong>비주얼 응답:</strong> 레시피 질문엔 영상 튜토리얼, 스포츠 질문엔 실시간 스코어카드<br><br>
+      <strong>지원 지역:</strong> 미국, 캐나다 시작 → 2026년 봄 호주, 뉴질랜드, 영국 확대 → 한국 추후 예정
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://techcrunch.com/2026/03/24/google-tv-new-gemini-features-keep-fans-updated-on-sports-teams-deep-dives-visual-answers/" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">OpenAI</div>
+    <h3>ChatGPT '인터랙티브 러닝' 출시 — 수학·과학 70개 주제 시각화 학습</h3>
+    <div class="summary">ChatGPT에 '인터랙티브 러닝' 기능이 추가됐습니다. 피타고라스 정리, 이상 기체 법칙 등 수학·과학 주제를 물어보면 변수를 조절할 수 있는 시각적 모듈이 나타납니다. 숫자를 바꾸면 그래프가 실시간으로 변하는 것을 보며 개념을 직관적으로 이해할 수 있어 학생과 학부모에게 유용합니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag">#ChatGPT</span>
+      <span class="tag">#교육</span>
+      <span class="tag">#시각화학습</span>
+    </div>
+    <div class="detail-content">
+      <strong>지원 주제 (70개+):</strong> 피타고라스 정리, 이상 기체 법칙, 원의 넓이, 렌즈 방정식 등<br><br>
+      <strong>사용 방법:</strong><br>
+      1. ChatGPT에 "피타고라스 정리 설명해줘"라고 입력<br>
+      2. 나타나는 인터랙티브 모듈에서 변 길이 조절<br>
+      3. 그래프와 계산 결과가 실시간으로 변화<br><br>
+      <strong>활용 예:</strong> 자녀 숙제 도와줄 때, 오랫만에 공부할 때, 개념 복습할 때
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 6. AI 커뮤니티 반응 -->
+<div class="section">
+  <div class="section-title">💬 AI 커뮤니티 반응</div>
+  <div class="grid">
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.prod.website-files.com/6418bbd648ad4081cf60eb29/695f72c6bff009d8a2f11c52_6858190161ae43a95c90eb10_Lindy_Thumbnail%2520(6)%2520(1).png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+      <div class="source">Reddit r/nocode</div>
+      <h3>"개발자 없이 AI 에이전트 만들기" — 노코드 자동화 트렌드</h3>
+      <div class="summary">r/nocode 커뮤니티에서 AI 에이전트 빌더가 뜨거운 화제입니다. Lindy AI, Relay.app 같은 도구로 "이메일 응대 → 일정 등록 → 후속 메일 발송"까지 자동화하는 '디지털 직원'을 코딩 없이 만들 수 있습니다. 2027년까지 기업 40%가 AI 에이전트를 사용할 전망입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag">#노코드</span>
+        <span class="tag">#AI에이전트</span>
+        <span class="tag">#자동화</span>
+      </div>
+      <div class="detail-content">
+        <strong>인기 노코드 AI 도구:</strong><br>
+        • <strong>Lindy AI:</strong> 이메일, 일정, 리드 관리 자동화<br>
+        • <strong>Relay.app:</strong> AI 에이전트가 다른 에이전트를 만드는 기능<br>
+        • <strong>n8n:</strong> 오픈소스, 프라이버시 중시하는 팀에 적합<br><br>
+        <strong>비용:</strong> 월 $50~$300 투자로 6개월 내 3~5배 ROI 달성 사례 다수<br>
+        <strong>시작 팁:</strong> 리드 응답, 예약 리마인더, CRM 업데이트 등 저위험 반복 작업부터
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.lindy.ai/blog/no-code-ai-agent-builder" target="_blank">원문 보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source">Reddit r/ChatGPT</div>
+      <h3>"메타 프롬프트가 답이다" — ChatGPT 활용법 레딧 인기 스레드</h3>
+      <div class="summary">레딧 r/ChatGPT 커뮤니티(400만+ 회원)에서 가장 많은 추천을 받은 팁은 '메타 프롬프트'입니다. "내 질문에 답하기 전에 먼저 명확히 할 점을 물어봐"라고 지시하면 AI가 더 정확한 답변을 제공합니다. 단순 프롬프트보다 3배 더 많은 추천을 받은 검증된 방법입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag">#Reddit</span>
+        <span class="tag">#프롬프트팁</span>
+        <span class="tag">#ChatGPT</span>
+      </div>
+      <div class="detail-content">
+        <strong>레딧 인기 프롬프트 팁:</strong><br>
+        • <strong>/BRIEFLY</strong>: 짧은 답변 요청<br>
+        • <strong>/ELI5</strong>: 쉽게 설명해달라는 요청<br>
+        • <strong>/STEP-BY-STEP</strong>: 단계별로 나눠서 설명<br>
+        • <strong>/EVAL-SELF</strong>: 자기 답변을 스스로 평가하고 개선<br><br>
+        <strong>Plus 유저 vs 무료 유저:</strong> 레딧 조사 결과 Plus 유저는 상세 프롬프트에서 90% 성공률, 무료 유저는 60% 성공률
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://elephas.app/blog/best-chatgpt-productivity-hacks-according-to-reddit" target="_blank">원문 보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source">Threads / X</div>
+      <h3>"Claude는 코딩, Gemini는 리서치, ChatGPT는 글쓰기" — AI 용도별 분업론 화제</h3>
+      <div class="summary">Threads와 X에서 "AI별 최적 용도"에 대한 논의가 활발합니다. 커뮤니티 공감대는 Claude가 코딩에, Gemini가 리서치와 멀티모달에, ChatGPT가 글쓰기와 범용 대화에 강하다는 것. 하나만 고르지 말고 용도별로 쓰라는 조언이 인기를 끌고 있습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag">#Threads</span>
+        <span class="tag">#AI비교</span>
+        <span class="tag">#활용팁</span>
+      </div>
+      <div class="detail-content">
+        <strong>커뮤니티 추천 용도:</strong><br>
+        • <strong>Claude:</strong> 코딩, 긴 문서 분석, 논리적 추론<br>
+        • <strong>Gemini:</strong> 웹 검색, 이미지 분석, 구글 앱 연동<br>
+        • <strong>ChatGPT:</strong> 창의적 글쓰기, 범용 대화, GPT Store 활용<br>
+        • <strong>Perplexity:</strong> 출처가 필요한 검색<br><br>
+        <strong>꿀팁:</strong> GlobalGPT 같은 통합 플랫폼으로 여러 AI를 한 곳에서 사용 가능
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://www.threads.net/@_imfakhr/post/DHikuPtgkV-/" target="_blank">원문 보기 →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 7. 트렌드 키워드 (5개만) -->
+<div class="section">
+  <div class="section-title">📈 트렌드 키워드</div>
+  <div class="keywords">
+    <span class="keyword hot">에이전틱 AI</span>
+    <span class="keyword hot">AI 스킬 격차</span>
+    <span class="keyword hot">오토 모드</span>
+    <span class="keyword hot">노코드 자동화</span>
+    <span class="keyword hot">AI 쇼핑</span>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Generated by Claude AI · 2026년 03월 26일 09:00 KST</p>
+  <p style="margin-top: 12px;"><a href="https://www.threads.com/@calmtiger_" target="_blank">@Calmtiger_</a></p>
+  <p style="margin-top: 24px;">
+    <a href="https://page.stibee.com/subscriptions/480199" target="_blank" style="background: linear-gradient(135deg, #FFD166, #E07B0A); color: #1a1a1a; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 600; margin-right: 8px;">🎁 얼리버드 구독 (첫 달 무료)</a>
+    <a href="https://page.stibee.com/subscriptions/480200" target="_blank" style="color: #FFD166; font-size: 0.85em; text-decoration: none;">정상가 구독 →</a>
+  </p>
+</div>
+</body>
+</html>
