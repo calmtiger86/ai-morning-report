@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 트렌드 모닝 리포트 - 2026년 03월 27일</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #fff; line-height: 1.7; font-size: 16px; max-width: 600px; margin: 0 auto; }
+  .header { background: linear-gradient(135deg, #FFD166, #E07B0A); padding: 44px 24px; text-align: center; }
+  .header .subtitle { font-size: 1.15em; font-weight: 600; opacity: 0.9; margin-bottom: 10px; letter-spacing: -0.3px; }
+  .header h1 { font-size: 2.2em; font-weight: 800; }
+  .header .date { opacity: 0.75; margin-top: 10px; font-size: 1em; }
+  .section { padding: 28px 16px; border-bottom: 1px solid #1f1f1f; }
+  .section-title { font-size: 1.35em; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .card { background: #111; border-radius: 14px; padding: 20px; margin-bottom: 16px; border: 1px solid #222; overflow: hidden; }
+  .card-img-wrap { width: 100%; margin: 0 0 16px 0; height: 180px; overflow: hidden; border-radius: 8px; }
+  .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .source { font-size: 0.82em; color: #555; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .card h3 { font-size: 1.08em; font-weight: 700; margin-bottom: 10px; line-height: 1.5; }
+  .card .summary { font-size: 0.97em; color: #bbb; line-height: 1.7; }
+  .card details { float: right; margin: 12px 0 0 10px; }
+  .card details summary {
+    list-style: none;
+    display: inline;
+    background: none;
+    border: none;
+    color: #FFD166;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    user-select: none;
+  }
+  .card details summary::-webkit-details-marker { display: none; }
+  .card details summary::marker { display: none; }
+  .card details summary .btn-close { display: none; }
+  .card details[open] summary .btn-open { display: none; }
+  .card details[open] summary .btn-close { display: inline; }
+  .card .detail-content { display: none; clear: both; font-size: 0.97em; color: #bbb; line-height: 1.7; margin-top: 12px; border-top: 1px solid #222; padding-top: 12px; }
+  .card details[open] ~ .detail-content { display: block; }
+  .card-footer { display: none; clear: both; align-items: center; justify-content: space-between; margin-top: 14px; flex-wrap: wrap; gap: 8px; }
+  .card details[open] ~ .card-footer { display: flex; }
+  .card a.link { color: #FFD166; font-size: 0.9em; text-decoration: none; }
+  .card a.link:hover { text-decoration: underline; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { background: #1f1f1f; border-radius: 20px; padding: 4px 12px; font-size: 0.8em; color: #999; }
+  .tag.free { background: #052e16; color: #4ade80; border: 1px solid #166534; }
+  .tag.paid { background: #1c1917; color: #fb923c; border: 1px solid #9a3412; }
+  .tag.easy { background: #0c1a2e; color: #60a5fa; border: 1px solid #1e40af; }
+  .grid { display: block; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 12px; padding: 4px 0 10px; }
+  .keyword { background: linear-gradient(135deg, #1f1f1f, #2a2a2a); border: 1px solid #333; border-radius: 30px; padding: 10px 22px; font-size: 1em; }
+  .keyword.hot { background: linear-gradient(135deg, #FFD166, #E07B0A); border-color: #E07B0A; color: #1a1a1a; }
+  .highlight { color: #f59e0b; }
+  .footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9em; }
+  .footer a { color: #FFD166; text-decoration: none; font-size: 1em; font-weight: 600; }
+  @media (max-width: 480px) {
+    body { font-size: 17px; padding: 0 8px; }
+    .header h1 { font-size: 1.9em; }
+    .section { padding: 28px 12px; }
+    .section-title { font-size: 1.25em; }
+    .card { padding: 16px; }
+    .card h3 { font-size: 1.1em; }
+    .card-img-wrap { height: 160px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="subtitle">매일 오전 9시에 만나는<br>비개발자를 위한 AI 활용 정보</div>
+  <h1>🤖 AI 트렌드 모닝 리포트</h1>
+  <div class="date" style="color: #e53935; font-weight: 700; margin-bottom: 20px;">2026년 03월 27일</div>
+  <div style="margin-top: 18px; margin-bottom: 10px;">
+    <a href="https://page.stibee.com/subscriptions/480199" target="_blank" style="background: rgba(0,0,0,0.25); color: #1a1a1a; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 0.88em; font-weight: 700; margin-right: 8px; border: 1px solid rgba(0,0,0,0.3);">🎁 얼리버드 구독</a>
+    <a href="https://page.stibee.com/subscriptions/480200" target="_blank" style="color: #1a1a1a; font-size: 0.85em; text-decoration: none; opacity: 0.7;">정상가 구독 →</a>
+  </div>
+</div>
+
+<!-- 1. 오늘의 빅 뉴스 -->
+<div class="section">
+  <div class="section-title">🔥 오늘의 빅 뉴스</div>
+
+  <div class="card">
+    <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2195019925.jpg" alt="Wikipedia AI 금지" onerror="this.parentElement.style.display='none'"></div>
+    <div class="source">TechCrunch</div>
+    <h3>위키피디아, AI로 작성한 문서 전면 금지 — "LLM으로 글 쓰는 것 자체가 위반"</h3>
+    <div class="summary">세계 최대 백과사전 위키피디아가 AI 생성 콘텐츠를 공식 금지했습니다. 영어 위키피디아 편집자들이 44대 2로 "LLM을 사용해 문서를 작성하거나 다시 쓰는 것은 금지"라는 새 규정을 통과시켰습니다. 이전에는 "처음부터 AI로 문서를 만들지 말 것"이라는 권고 수준이었지만, 이제는 부분 수정도 금지됩니다. AI가 만든 부정확한 정보가 위키피디아에 올라가고, 이를 다시 AI 학습 데이터로 쓰는 '악순환'을 막기 위한 조치입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags"><span class="tag">#위키피디아</span><span class="tag">#AI규제</span><span class="tag">#콘텐츠정책</span></div>
+    <div class="detail-content">
+      이번 금지 조치의 배경에는 'TomWikiAssist'라는 AI 에이전트 사건이 있습니다. 이 자율 AI가 24시간 쉬지 않고 여러 문서를 작성·편집하며 인간 편집자들이 감당할 수 없는 규모의 혼란을 일으켰습니다.<br><br>
+      <strong>예외 사항:</strong> 두 가지 경우에만 AI 사용이 허용됩니다. (1) 자신이 쓴 글의 맞춤법·문법 교정 제안, (2) 번역 초안 작성. 단, 두 경우 모두 반드시 사람이 정확성을 검토해야 합니다.<br><br>
+      <strong>나에게 미치는 영향:</strong> 위키피디아를 참고 자료로 쓸 때 AI 오염 콘텐츠를 걱정할 필요가 줄어듭니다. 반면, 블로그나 콘텐츠 플랫폼도 비슷한 정책을 도입할 가능성이 높아지므로 AI로 글을 쓸 때 더욱 신중해야 합니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">Bloomberg / Google</div>
+    <h3>구글 Gemini, ChatGPT 대화 기록 통째로 가져오기 기능 출시</h3>
+    <div class="summary">구글이 Gemini 사용자들이 ChatGPT나 Claude에서 쌓은 대화 기록을 그대로 가져올 수 있는 기능을 공개했습니다. "다른 AI 쓰다가 Gemini로 갈아타고 싶은데 처음부터 다시 설명하기 귀찮다"는 분들을 위한 기능입니다. ChatGPT에서 데이터를 ZIP 파일로 내보내면 Gemini에 업로드할 수 있고, '기억(Memory)' 기능으로 내 취향과 맥락을 그대로 이전할 수도 있습니다. 무료 사용자도 이용 가능하며, 하루 5개 ZIP 파일(각 5GB)까지 업로드됩니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags"><span class="tag">#Gemini</span><span class="tag">#ChatGPT</span><span class="tag">#AI이동성</span></div>
+    <div class="detail-content">
+      <strong>두 가지 가져오기 방식:</strong><br>
+      1. <strong>대화 가져오기:</strong> ChatGPT/Claude에서 ZIP 파일 내보내기 → gemini.google.com/import에 업로드 → 이전 대화가 Gemini 사이드바에 표시됩니다.<br>
+      2. <strong>기억 가져오기:</strong> Gemini가 제공하는 프롬프트를 기존 AI에 붙여넣기 → 생성된 요약을 다시 Gemini에 붙여넣기 → 내 취향과 맥락이 즉시 적용됩니다.<br><br>
+      <strong>왜 중요한가:</strong> 미국 모바일 시장에서 ChatGPT 점유율이 69%→45%로 하락하고 Gemini가 15%→25%로 상승하는 상황에서, 구글이 적극적으로 사용자 유치에 나선 것입니다. 단, 가져온 대화는 구글 모델 학습에 사용될 수 있으니 민감한 정보는 주의하세요.<br><br>
+      <strong>지역 제한:</strong> EU, 스위스, 영국에서는 아직 사용 불가합니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.bloomberg.com/news/articles/2026-03-26/google-gemini-adds-tool-to-make-it-easier-to-switch-from-chatgpt" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">Anthropic / CNBC</div>
+    <h3>Claude, 이제 내 맥북을 직접 조작한다 — 'Computer Use' 정식 출시</h3>
+    <div class="summary">Anthropic이 Claude가 사용자의 맥 컴퓨터를 직접 제어할 수 있는 'Computer Use' 기능을 출시했습니다. 마우스 클릭, 키보드 입력, 스크롤, 앱 전환까지 Claude가 대신 해줍니다. 예를 들어 "이 PPT를 PDF로 변환해서 오늘 회의 캘린더에 첨부해줘"라고 말하면, Claude가 알아서 파일을 열고, 변환하고, 캘린더 앱에 첨부합니다. 아이폰의 'Dispatch' 앱과 연동하면 외출 중에도 집 컴퓨터에 작업을 맡길 수 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags"><span class="tag">#Claude</span><span class="tag">#에이전트</span><span class="tag">#자동화</span></div>
+    <div class="detail-content">
+      <strong>작동 방식:</strong> Claude가 화면을 스크린샷으로 캡처 → 이미지를 분석해 다음 행동 결정 → 클릭, 타이핑, 스크롤 실행 → 반복. 전용 앱 연동(Google Workspace, Slack)이 있으면 우선 사용하고, 없으면 직접 마우스/키보드 조작으로 전환합니다.<br><br>
+      <strong>안전장치:</strong> 사용자가 허용한 앱만 접근 가능, 언제든 중단 가능, 금융·의료 앱 자동 제외, 주식 거래나 민감 데이터 입력 차단.<br><br>
+      <strong>가격:</strong> Claude Pro(월 $20) 또는 Claude Max 구독자 대상, 현재 macOS만 지원하며 Windows는 추후 지원 예정.<br><br>
+      <strong>활용 예시:</strong> 아침 브리핑 자동 발송, 코드 리뷰 자동화, 이메일 모니터링 후 자동 응답 등 반복 업무를 맡길 수 있습니다.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.cnbc.com/2026/03/24/anthropic-claude-ai-agent-use-computer-finish-tasks.html" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 2. 이번 주 써볼 만한 AI 도구 -->
+<div class="section">
+  <div class="section-title">🛠 이번 주 써볼 만한 AI 도구</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/03/imgi_30_7d51e3a4c1434d7f9b2708a619f3783ftplv-2zwwjm3azk-image.webp" alt="CapCut Seedance 2.0" onerror="this.parentElement.style.display='none'"></div>
+      <div class="source">ByteDance / CapCut</div>
+      <h3>CapCut에 Seedance 2.0 탑재 — 텍스트로 15초 고품질 영상 생성</h3>
+      <div class="summary">이런 분께 추천: 릴스, 틱톡, 쇼츠 콘텐츠를 빠르게 만들고 싶은 크리에이터. ByteDance의 최신 AI 영상 생성 모델 'Seedance 2.0'이 CapCut에 통합되었습니다. 텍스트 프롬프트, 이미지, 참고 영상을 입력하면 1080p 고화질 영상이 생성됩니다. 오디오까지 자동 싱크되며, 8개 이상 언어로 립싱크까지 맞춰줍니다. OpenAI Sora가 서비스 종료된 지금, 가장 접근하기 쉬운 AI 영상 생성 도구입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">앱 설치</span>
+        <span class="tag free">무료 크레딧</span>
+        <span class="tag">#크리에이터</span>
+        <span class="tag">#숏폼</span>
+        <span class="tag">#SNS자동화</span>
+      </div>
+      <div class="detail-content">
+        <strong>사용법 3단계:</strong><br>
+        1단계: CapCut 앱(모바일/데스크톱/웹) 최신 버전 설치<br>
+        2단계: 'AI 생성' 메뉴에서 Seedance 2.0 선택<br>
+        3단계: 텍스트 설명 또는 참고 이미지 입력 → 최대 15초 영상 생성<br><br>
+        <strong>주요 기능:</strong> 6가지 화면비 지원, 카메라 무브먼트·편집 스타일 학습, 요리·피트니스·제품 영상 등 다양한 콘텐츠 제작 가능.<br><br>
+        <strong>안전 장치:</strong> 실제 얼굴 사진으로 영상 생성 불가, 저작권 보호 IP 차단, 보이지 않는 워터마크 자동 삽입.<br><br>
+        <strong>지역:</strong> 인도네시아, 필리핀, 태국, 베트남, 브라질, 멕시코, 아프리카, 중동에서 먼저 출시. 한국 출시 예정.
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://dreamina.capcut.com/tools/seedance-2-0" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/03/260325_TranscribeLaunch_Hero.jpeg" alt="Cohere Transcribe" onerror="this.parentElement.style.display='none'"></div>
+      <div class="source">Cohere</div>
+      <h3>Cohere Transcribe — 14개 언어 지원 무료 음성 인식 모델</h3>
+      <div class="summary">이런 분께 추천: 회의록 자동 작성, 인터뷰 녹취, 팟캐스트 자막이 필요한 분. Cohere가 오픈소스 음성 인식 모델 'Transcribe'를 출시했습니다. 한국어 포함 14개 언어를 지원하며, 20억 파라미터의 가벼운 모델이라 일반 PC에서도 돌릴 수 있습니다. API로 무료 사용 가능하고, 기업용 전용 서버도 제공합니다. 1분 분량 오디오를 0.1초 만에 처리하는 빠른 속도가 장점입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">API 호출</span>
+        <span class="tag free">무료 API</span>
+        <span class="tag">#회의록</span>
+        <span class="tag">#자막</span>
+        <span class="tag">#한국어지원</span>
+      </div>
+      <div class="detail-content">
+        <strong>지원 언어:</strong> 영어, 프랑스어, 독일어, 이탈리아어, 스페인어, 포르투갈어, 그리스어, 네덜란드어, 폴란드어, 중국어, 일본어, <strong>한국어</strong>, 베트남어, 아랍어<br><br>
+        <strong>성능:</strong> Hugging Face Open ASR 리더보드에서 평균 WER(단어 오류율) 5.42%로 1위. 525분 오디오를 1분 만에 처리.<br><br>
+        <strong>사용 방법:</strong><br>
+        1단계: Cohere 계정 생성 (무료)<br>
+        2단계: API 키 발급<br>
+        3단계: 오디오 파일 업로드 또는 실시간 스트리밍 연결<br><br>
+        <strong>로컬 설치:</strong> Hugging Face에서 모델 다운로드 후 일반 GPU(RTX 3060 이상)에서 실행 가능.
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://huggingface.co/CohereLabs/cohere-transcribe-03-2026" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg" alt="Mistral Voxtral TTS" onerror="this.parentElement.style.display='none'"></div>
+      <div class="source">Mistral AI</div>
+      <h3>Mistral Voxtral TTS — 5초 샘플로 내 목소리 복제하는 AI</h3>
+      <div class="summary">이런 분께 추천: 유튜브 나레이션, 팟캐스트, 다국어 더빙이 필요한 1인 크리에이터. 프랑스 AI 기업 Mistral이 텍스트를 음성으로 바꾸는 'Voxtral TTS' 모델을 오픈소스로 공개했습니다. 단 5초 음성 샘플만 있으면 억양, 말투, 감정까지 학습해서 복제합니다. 9개 언어 지원, 언어 간 전환 시에도 목소리 특성이 유지됩니다. ElevenLabs와 비슷한 품질이지만 무료 오픈소스입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">Hugging Face</span>
+        <span class="tag free">오픈소스</span>
+        <span class="tag">#TTS</span>
+        <span class="tag">#더빙</span>
+        <span class="tag">#나레이션</span>
+      </div>
+      <div class="detail-content">
+        <strong>지원 언어:</strong> 영어, 프랑스어, 독일어, 스페인어, 네덜란드어, 포르투갈어, 이탈리아어, 힌디어, 아랍어<br><br>
+        <strong>성능:</strong> 40억 파라미터로 가볍고, 500자(10초 분량)를 1.6초 만에 생성. 첫 음성 출력까지 90ms로 실시간 대화에도 적합.<br><br>
+        <strong>감정 표현:</strong> 중립, 행복, 빈정거림 등 다양한 톤 지원. 자연스러운 말투로 기계음 느낌 최소화.<br><br>
+        <strong>사용 방법:</strong><br>
+        1단계: Hugging Face에서 'mistralai/Voxtral-TTS' 다운로드<br>
+        2단계: 5초 이상의 음성 샘플 준비<br>
+        3단계: 텍스트 입력 → 복제된 목소리로 음성 생성<br><br>
+        <strong>경쟁 비교:</strong> ElevenLabs v3와 동등 수준 자연스러움, 하지만 완전 무료+오픈소스.
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://huggingface.co/mistralai/Voxtral-TTS" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://app-companion-430619.appspot.com/static/og.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+      <div class="source">Google Labs</div>
+      <h3>Stitch 2.0 — 말로 설명하면 앱 UI가 뚝딱, 완전 무료</h3>
+      <div class="summary">이런 분께 추천: 앱이나 웹사이트 아이디어는 있는데 디자인을 못하는 비개발자. 구글 Labs의 'Stitch 2.0'이 대폭 업그레이드되었습니다. "카페 주문 앱인데 따뜻한 느낌으로"라고 말하면 AI가 전체 UI를 디자인해줍니다. 음성으로 수정 지시도 가능하고, 클릭 한 번으로 인터랙티브 프로토타입이 됩니다. 월 350회 무료 생성, Figma로 내보내기도 지원합니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags">
+        <span class="tag easy">설치불필요</span>
+        <span class="tag free">무료 350회/월</span>
+        <span class="tag">#UI디자인</span>
+        <span class="tag">#프로토타입</span>
+        <span class="tag">#기획자</span>
+      </div>
+      <div class="detail-content">
+        <strong>핵심 기능:</strong><br>
+        - <strong>Vibe Design:</strong> 레이아웃, 패딩 같은 세부사항 대신 "느낌"을 설명하면 AI가 알아서 디자인<br>
+        - <strong>음성 지시:</strong> "메뉴 옵션 3가지로 보여줘", "다른 색상 팔레트로" 등 말로 수정<br>
+        - <strong>멀티 에이전트:</strong> 타이포그래피, 색상, 이미지를 각각 다른 AI가 동시 작업<br>
+        - <strong>즉석 프로토타입:</strong> 화면 연결 후 'Play' 버튼으로 바로 체험<br><br>
+        <strong>개발자 연동:</strong> Claude Code, Cursor 등 AI 코딩 도구와 연결 가능. HTML/CSS/React 코드 직접 다운로드 또는 Figma 내보내기 지원.<br><br>
+        <strong>한계:</strong> Figma의 플러그인 생태계, 실시간 협업, 컴포넌트 라이브러리까지는 대체 못함. 아이디어 단계와 빠른 프로토타이핑에 최적화.
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://stitch.withgoogle.com" target="_blank">바로 써보기 →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 3. 소상공인·N잡러·1인 크리에이터 AI 활용법 -->
+<div class="section">
+  <div class="section-title">💼 소상공인·N잡러·1인 크리에이터 AI 활용법</div>
+
+  <div class="card">
+    <div class="source">n8n / 커뮤니티</div>
+    <h3>n8n으로 24시간 일하는 AI 비서 만들기 — 리드 관리부터 고객 응대까지</h3>
+    <div class="summary">이런 분께 추천: 문의 응대, 예약 관리, 후속 연락 등 반복 업무에 지친 1인 사업자. n8n은 노코드로 AI 에이전트를 만들 수 있는 자동화 플랫폼입니다. 2025년까지는 "이것 하면 저것 해라" 식의 단순 자동화였다면, 2026년에는 AI가 상황을 판단해서 스스로 결정합니다. 예: 웹사이트에서 문의가 오면 → AI가 내용 분석 → 개인화된 답변 작성 → CRM에 고객 정보 저장 → 담당자에게 Slack 알림. 이 모든 게 자동입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">노코드</span>
+      <span class="tag paid">월 €24(약 3.5만원)~</span>
+      <span class="tag">#자동화</span>
+      <span class="tag">#리드관리</span>
+      <span class="tag">#1인기업</span>
+    </div>
+    <div class="detail-content">
+      <strong>n8n AI 에이전트가 할 수 있는 일:</strong><br>
+      - 고객 문의 자동 분류 및 응답<br>
+      - CRM 데이터 기반 개인화 이메일 발송<br>
+      - 주문 상태 확인 및 환불 처리<br>
+      - IoT 센서 데이터 분석 후 알림 발송<br><br>
+      <strong>vs Zapier:</strong> n8n은 오픈소스라 자체 서버에 설치 가능(무료), AI 에이전트 기능이 더 강력함. Zapier는 더 쉽지만 AI 자율 판단 기능은 n8n이 앞섬.<br><br>
+      <strong>시작 방법:</strong><br>
+      1단계: n8n.io 가입 또는 Docker로 자체 설치<br>
+      2단계: 'AI Agent' 노드 추가, OpenAI/Claude API 연결<br>
+      3단계: 트리거(이메일, 웹훅 등) 설정 → 워크플로우 완성<br><br>
+      <strong>가격:</strong> Starter €24/월(2,500회 실행), Pro €60/월(10,000회). 자체 서버 설치 시 완전 무료.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://n8n.io/ai-agents/" target="_blank">바로 써보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">Reddit r/ChatGPT / 커뮤니티</div>
+    <h3>ChatGPT 파워유저의 비밀 — "메타 프롬프트"로 3배 좋은 답변 얻기</h3>
+    <div class="summary">이런 분께 추천: ChatGPT를 쓰는데 원하는 답이 안 나와서 답답한 분. Reddit의 400만 ChatGPT 커뮤니티에서 가장 많은 추천을 받은 팁은 바로 '메타 프롬프트'입니다. 핵심은 "답변하기 전에 먼저 나한테 질문해"라고 시키는 것. 이렇게 하면 AI가 추측하지 않고 정확한 맥락을 파악해서 훨씬 나은 결과물을 줍니다. 복잡한 프롬프트 엔지니어링 없이도 바로 적용 가능한 실전 팁입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">바로적용</span>
+      <span class="tag free">무료</span>
+      <span class="tag">#프롬프트</span>
+      <span class="tag">#생산성</span>
+      <span class="tag">#ChatGPT</span>
+    </div>
+    <div class="detail-content">
+      <strong>메타 프롬프트 공식:</strong><br>
+      "시작하기 전에, 더 좋은 답변을 위해 필요한 질문들을 먼저 해줘. 최대한 자세하게."<br><br>
+      <strong>왜 효과적인가:</strong> 이 프롬프트 없이는 AI가 "합리적으로 들리는" 내용을 지어내서 자신 있게 말합니다. 질문을 먼저 하게 하면 가정을 줄이고 실제 필요에 맞는 답을 얻습니다.<br><br>
+      <strong>Reddit 인기 팁 추가:</strong><br>
+      - /ELI5: 쉽게 설명해줘<br>
+      - /STEP-BY-STEP: 단계별로 나눠서<br>
+      - /ACT AS [전문가]: 특정 역할 부여<br>
+      - 사진 분석: 마트 샴푸 코너 사진 + 내 머리카락 사진 → 제품 추천<br><br>
+      <strong>2026년 트렌드:</strong> 프롬프트 기술보다 '시스템 구축'이 더 중요해짐. 프로젝트 기능으로 문서 업로드 + 커스텀 지침 설정하면 매번 설명할 필요 없음.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://elephas.app/blog/best-chatgpt-productivity-hacks-according-to-reddit" target="_blank">바로 써보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">GPTers 지피터스</div>
+    <h3>국내 최대 AI 커뮤니티에서 배우는 실전 AI 활용 — 6,000개 무료 사례</h3>
+    <div class="summary">이런 분께 추천: AI 활용법을 한국어로, 실제 사례 중심으로 배우고 싶은 분. '지피터스(GPTers)'는 4만 명이 활동하는 국내 최대 AI 커뮤니티입니다. 6,000개 이상의 AI 활용 사례 게시글이 무료로 공개되어 있고, "AI로 돈 되는 SNS 콘텐츠 발행", "챗GPT로 SEO 글쓰기" 등 실전 스터디도 운영합니다. AI 입문자도 이전 기수 베스트 사례를 참고하며 단계별로 성장할 수 있습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">회원가입</span>
+      <span class="tag free">무료 열람</span>
+      <span class="tag">#커뮤니티</span>
+      <span class="tag">#실전사례</span>
+      <span class="tag">#한국어</span>
+    </div>
+    <div class="detail-content">
+      <strong>지피터스 주요 콘텐츠:</strong><br>
+      - AI 글쓰기/책쓰기 노하우<br>
+      - AI UX/UI 디자인 팁<br>
+      - 노코드 개발 사례<br>
+      - 2026 IT 트렌드 PDF 분석<br><br>
+      <strong>비개발자용 Claude 코딩 팁 (지피터스 인기글):</strong><br>
+      Claude 데스크탑 앱 설치 → 사이드바 '코드' 선택 → 폴더 권한 부여 → 자연어로 코딩. 터미널 없이 대화만으로 가능!<br><br>
+      <strong>스터디 프로그램:</strong> "내 자녀와 함께하는 ChatGPT", "AI로 고객 몰려오는 SEO 글쓰기" 등 다양한 주제.<br><br>
+      <strong>2026 핵심 트렌드 (지피터스 분석):</strong> 에이전틱 AI, 온디바이스+클라우드 하이브리드, Physical AI/로봇, AI 보안·프라이버시 중요도 급상승.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.gpters.org/" target="_blank">바로 써보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">Medium / Reddit</div>
+    <h3>Claude로 사업 아이디어 검증하기 — 1주일 만에 3개 아이디어 테스트한 방법</h3>
+    <div class="summary">이런 분께 추천: 부업/창업 아이디어는 있는데 시장 반응이 궁금한 N잡러. Reddit 커뮤니티에서 실제 고객 불만과 니즈를 수집한 뒤, Claude로 분석해서 사업 아이디어를 검증하는 방법이 화제입니다. 핵심은 "LLM을 연결하면 신호 대 잡음 비율이 완전히 달라진다"는 것. 니치 서브레딧에서 진짜 고객 목소리를 찾고, Claude가 패턴을 분석해서 실제 수요가 있는지 판단해줍니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">바로적용</span>
+      <span class="tag free">무료</span>
+      <span class="tag">#창업</span>
+      <span class="tag">#아이디어검증</span>
+      <span class="tag">#Claude</span>
+    </div>
+    <div class="detail-content">
+      <strong>검증 프로세스:</strong><br>
+      1단계: 관련 Reddit/커뮤니티에서 불만·질문 게시글 수집<br>
+      2단계: Claude에게 "이 게시글들에서 반복되는 문제와 니즈를 분석해줘" 요청<br>
+      3단계: 도출된 니즈 기반으로 솔루션 가설 세우기<br>
+      4단계: Claude에게 "이 솔루션의 잠재 고객 규모와 경쟁 상황 분석해줘" 요청<br><br>
+      <strong>Claude의 강점:</strong> 200K 토큰 컨텍스트로 대량의 게시글을 한 번에 분석 가능. 코딩 관련 아이디어라면 Claude Code로 바로 프로토타입까지.<br><br>
+      <strong>실제 사례:</strong> 한 사용자가 이 방법으로 3개 아이디어를 1주일 만에 테스트, 그 중 1개가 실제 수요 확인되어 MVP 개발 진행 중.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://medium.com/@mohit15856/i-used-reddit-claude-to-validate-3-business-ideas-in-one-week-cb190bfb39b1" target="_blank">바로 써보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 4. 국내 AI 소식 -->
+<div class="section">
+  <div class="section-title">🇰🇷 국내 AI 소식</div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://dazabi.com/img/dazabi_meta.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">과학기술정보통신부</div>
+    <h3>과기정통부, AI 안전·포용 정책 발표 — 4개 기관 공동 협력</h3>
+    <div class="summary">과학기술정보통신부가 3월 26일, "안전하고 포용적인 AI·디지털 사회 실현"을 위해 4개 기관이 협력한다고 발표했습니다. AI가 일상에 깊이 들어오면서 데이터 프라이버시 침해, 편향된 알고리즘, 디지털 격차 등의 문제가 커지고 있습니다. 정부가 AI 기술의 안전성과 포용성을 핵심 가치로 삼아 규제 프레임워크를 마련하겠다는 방침입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags"><span class="tag">#AI정책</span><span class="tag">#과기정통부</span><span class="tag">#AI안전</span></div>
+    <div class="detail-content">
+      <strong>주요 내용:</strong><br>
+      - AI 기술 안전성 강화: 편향 감지, 설명 가능한 AI, 보안 취약점 점검<br>
+      - 디지털 포용성 확대: 고령층·장애인 AI 접근성 개선<br>
+      - 프라이버시 보호: 개인정보 활용 범위 명확화<br><br>
+      <strong>나에게 미치는 영향:</strong> AI 서비스 이용 시 개인정보 보호가 강화될 예정. AI를 활용한 사업을 준비 중이라면 규제 동향 주시 필요.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://dazabi.com/insurance_magazine/article.php?id=10778" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://www.ehom.kr/news/2026/03/15/b3cde585f0a17388445734d9de66c2a2022521_thumb.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">Microsoft / ModernWork Korea</div>
+    <h3>마이크로소프트 Copilot Wave 3 발표 — AI가 계획하고 실행까지</h3>
+    <div class="summary">3월 9일 마이크로소프트가 발표한 Copilot Wave 3는 AI를 '업무 보조'에서 '실행 단계'로 확장합니다. Copilot Cowork는 여러 앱과 데이터를 넘나들며 실제 업무를 계획하고 실행합니다. 예를 들어 "다음 주 분기 보고서 준비해줘"라고 하면, 관련 파일 수집부터 초안 작성, 일정 조율까지 자동 처리합니다. Agent 365는 5월 1일 정식 출시 예정이며, 가격은 사용자당 월 15달러입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags"><span class="tag">#Copilot</span><span class="tag">#Microsoft</span><span class="tag">#에이전트AI</span></div>
+    <div class="detail-content">
+      <strong>Wave 3 핵심 기능:</strong><br>
+      - <strong>Copilot Cowork:</strong> 자율 AI가 여러 단계의 업무를 계획하고 실행<br>
+      - <strong>앱 내 실행형 Copilot:</strong> Excel, Word, PowerPoint 등에서 직접 작업 수행<br>
+      - <strong>채팅 기반 에이전트:</strong> 대화만으로 복잡한 워크플로우 자동화<br>
+      - <strong>멀티모델 인텔리전스:</strong> 작업에 따라 최적 AI 모델 자동 선택<br><br>
+      <strong>출시 일정:</strong> Copilot Cowork는 현재 Research Preview로 일부 고객 테스트 중, 3월 말부터 Frontier 프로그램으로 확대. Agent 365는 2026년 5월 1일 GA 예정.<br><br>
+      <strong>나에게 미치는 영향:</strong> Microsoft 365 사용 기업이라면 기존 업무 자동화 수준이 크게 높아질 전망. 특히 반복적인 보고서 작성, 일정 관리, 데이터 분석 업무에서 효과적.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://microsoft.github.io/mwkorea/copilot/CopilotWave3/" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">중소벤처기업부 / NIPA</div>
+    <h3>2026년 AI바우처 3월 공고 — 소상공인도 AI 도입 지원금 받는다</h3>
+    <div class="summary">AI 도입 비용이 부담되는 소상공인과 중소기업을 위한 'AI바우처 지원사업'이 3월에 공고됩니다. 2026년 중기부 AI 예산 약 8천억 원 중, '혁신 소상공인 AI 활용 지원'에 144억 원이 배정되었습니다. 소상공인이 AI 솔루션 공급기업과 매칭되어 맞춤형 AI 서비스를 도입할 수 있습니다. 4~5월 신청, 5월 협약 체결, 5~11월 과제 수행 일정입니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags"><span class="tag">#AI바우처</span><span class="tag">#정부지원</span><span class="tag">#소상공인</span></div>
+    <div class="detail-content">
+      <strong>2026년 중기부 AI 관련 예산:</strong><br>
+      - 혁신 소상공인 AI 활용 지원: 144억 원<br>
+      - 소상공인 원스톱 지원 (AI 맞춤 정책 추천): 50억 원<br>
+      - 중소기업 통합플랫폼 (AI 맞춤 서비스): 82억 원<br><br>
+      <strong>AI바우처 일정:</strong><br>
+      - 3월: 공급기업 Pool 모집 공고<br>
+      - 4~5월: 수요기업 신청 및 선정 평가<br>
+      - 5월: 협약 체결<br>
+      - 5~11월: AI 솔루션 도입 과제 수행<br><br>
+      <strong>함께 진행되는 지원:</strong> 스마트기술 도입 지원(키오스크, 서빙로봇, 사이니지, 경영 S/W), 충남 소상공인 사업화 지원(마감 3/26), 서울 친환경 보조금(~4/10)
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.nipa.kr/home/bsnsAll/1/detail?bsnsDtlsIemNo=580" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 5. 비개발자를 위한 AI 소식 -->
+<div class="section">
+  <div class="section-title">🙋 비개발자를 위한 AI 소식</div>
+
+  <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/03/claude-dispatch-computer-control.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+    <div class="source">Anthropic / 9to5Google</div>
+    <h3>Claude Desktop 앱에서 코딩 없이 자동화하기 — 비개발자도 가능</h3>
+    <div class="summary">"Claude Code"라고 하면 개발자 전용 같지만, 실제로는 'Claude가 내 컴퓨터에서 직접 일하는 것'입니다. 지피터스 커뮤니티에서 공유된 팁: Claude Desktop 앱 설치 → 사이드바에서 '코드' 선택 → 폴더 권한 부여 → 자연어로 지시. 터미널이나 명령어 없이 대화만으로 파일 정리, 이미지 리사이즈, 데이터 정리 등이 가능합니다. 클라우드 기반 Claude보다 훨씬 큰 파일도 처리 가능합니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">앱 설치</span>
+      <span class="tag paid">월 $20~</span>
+      <span class="tag">#비개발자</span>
+      <span class="tag">#자동화</span>
+      <span class="tag">#Claude</span>
+    </div>
+    <div class="detail-content">
+      <strong>비개발자가 할 수 있는 일:</strong><br>
+      - 폴더 내 파일 이름 일괄 변경<br>
+      - 이미지 크기 일괄 조정<br>
+      - 엑셀/CSV 데이터 정리 및 분석<br>
+      - 도메인 이름 아이디어 브레인스토밍<br>
+      - 고객 통화 녹음 요약<br><br>
+      <strong>vs 웹 Claude:</strong> 로컬에서 실행되므로 더 큰 파일 처리 가능, 더 오래 작업 가능, 실제 파일 조작 가능.<br><br>
+      <strong>파워유저 팁:</strong> "이 변경사항에 대해 철저히 검토하고, 네 테스트를 통과할 때까지 PR 만들지 마" 같은 지시로 품질 관리 가능.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://9to5google.com/2026/03/24/claude-can-now-remotely-control-your-computer-and-it-looks-absolutely-wild-video/" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="source">OpenAI / NxCode</div>
+    <h3>GPT-5.4 mini·nano 출시 — 무료 사용자도 고급 추론 기능 사용 가능</h3>
+    <div class="summary">3월 18일 OpenAI가 경량화 모델 GPT-5.4 mini와 nano를 공식 출시했습니다. ChatGPT 무료 및 Go 사용자는 '+' 메뉴에서 '잘 생각하기(Thinking)'를 눌러 고급 추론 기능을 사용할 수 있습니다. Plus 이상 구독자는 GPT-5.4 Thinking 한도 소진 시 자동으로 mini로 전환됩니다. 기존 GPT-5.1 모델은 3월 11일부터 서비스가 종료되어 GPT-5.3/5.4로 자동 전환되었습니다.</div>
+    <details>
+      <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+    </details>
+    <div class="tags">
+      <span class="tag easy">자동적용</span>
+      <span class="tag free">무료 사용 가능</span>
+      <span class="tag">#ChatGPT</span>
+      <span class="tag">#GPT5</span>
+      <span class="tag">#무료AI</span>
+    </div>
+    <div class="detail-content">
+      <strong>3월 주요 변경사항:</strong><br>
+      - <strong>GPT-5.4 mini/nano:</strong> 3월 18일 출시, 무료 사용자도 Thinking 기능 체험 가능<br>
+      - <strong>GPT-5.1 종료:</strong> 3월 11일부터 GPT-5.1 Instant/Thinking/Pro 모두 서비스 종료<br>
+      - <strong>레거시 심층 리서치:</strong> 3월 26일 제거, 현재 심층 리서치 경험은 유지<br>
+      - <strong>응답 스타일 개선:</strong> "원하신다면…", "믿기 어려우시겠지만…" 등 낚시성 문구 감소<br><br>
+      <strong>GPT-5.4 Pro 성능:</strong> 100만 토큰 컨텍스트 윈도우 지원(GPT-4.1 이후 두 번째), 지식 컷오프 이슈 개선, 국내 수능 테스트 만점 달성.<br><br>
+      <strong>광고 도입:</strong> 미국 내 무료/저비용 요금제 사용자 대상 광고 표시 시작.
+    </div>
+    <div class="card-footer">
+      <a class="link" href="https://www.nxcode.io/resources/news/gpt-5-4-release-date-features-pricing-2026" target="_blank">원문 보기 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 6. AI 커뮤니티 반응 -->
+<div class="section">
+  <div class="section-title">💬 AI 커뮤니티 반응</div>
+  <div class="grid">
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://cdn.theneuron.ai/Gemini_Generated_Image_w7ejazw7ejazw7ej.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+
+      <div class="source">Reddit r/ChatGPT</div>
+      <h3>Reddit 400만 커뮤니티의 결론 — "프롬프트보다 시스템 구축이 중요"</h3>
+      <div class="summary">2026년 Reddit r/ChatGPT 커뮤니티의 핵심 인사이트: AI 활용 능력의 차이는 더 이상 "어떤 프롬프트를 쓰느냐"가 아닙니다. "AI 주변에 어떤 시스템을 구축했느냐"가 실력 차이를 만듭니다. 잠자는 동안 돌아가는 에이전트, 다른 도구와 연결되는 플러그인, 여러 AI 단계를 연결하는 워크플로우 — 이런 시스템을 갖춘 사람과 그냥 채팅만 하는 사람의 생산성 격차가 벌어지고 있습니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags"><span class="tag">#ChatGPT</span><span class="tag">#생산성</span><span class="tag">#2026트렌드</span></div>
+      <div class="detail-content">
+        <strong>시스템 구축 예시:</strong><br>
+        1. <strong>프로젝트 기능:</strong> 매뉴얼, SOP, 스타일 가이드 업로드 + 커스텀 지시 설정 → 매번 설명 불필요<br>
+        2. <strong>NotebookLM:</strong> 논문, PDF, 회의록 업로드 → 해당 자료만 기반으로 답변하는 AI (환각 감소)<br>
+        3. <strong>자동화 연결:</strong> Zapier/n8n으로 ChatGPT를 CRM, 이메일, 슬랙과 연결<br><br>
+        <strong>2026년 AI 스킬 핵심:</strong> 프롬프트 엔지니어링 → 시스템 디자인으로 진화. "AI를 쓰는 사람"과 "AI 덕분에 빨라진 사람"의 차이는 시스템에 있음.<br><br>
+        <strong>입문자 조언:</strong> 반복하는 작업 하나를 골라서 프로젝트+자동화로 시스템화해보세요. 그게 첫걸음입니다.
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://aimagazine.com/ai-applications/2026-ai-trends" target="_blank">원문 보기 →</a>
+      </div>
+    </div>
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdifjjo7ppavf70dk7fjs.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+      <div class="source">DEV Community / 개발자 커뮤니티</div>
+      <h3>개발자들의 솔직한 비교 — "코딩은 Claude, 멀티모달은 ChatGPT"</h3>
+      <div class="summary">DEV Community와 Reddit 개발자 커뮤니티의 2026년 3월 기준 종합 평가입니다. Claude Opus 4.6은 SWE-bench에서 80.8%를 달성하며 코딩 벤치마크 1위를 기록했습니다. 실제 디버깅 테스트에서도 Claude는 1번의 후속 질문으로 근본 원인을 파악한 반면, ChatGPT는 3번이 필요했습니다. 다만 이미지 생성, 음성 모드, 웹 검색 등 멀티모달 기능은 ChatGPT가 압도적입니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags"><span class="tag">#Claude</span><span class="tag">#ChatGPT</span><span class="tag">#코딩</span><span class="tag">#개발자</span></div>
+      <div class="detail-content">
+        <strong>Claude 강점:</strong><br>
+        - SWE-bench 80.8%로 코딩 벤치마크 1위<br>
+        - 200K 컨텍스트로 대규모 코드베이스 한 번에 분석<br>
+        - 디버깅 시 더 적은 대화로 근본 원인 파악<br>
+        - 장문 문서 분석, 기술 문서 작성에 강점<br><br>
+        <strong>ChatGPT 강점:</strong><br>
+        - DALL-E 이미지 생성 내장<br>
+        - 고급 음성 모드 (실시간 대화)<br>
+        - 더 광범위한 서드파티 도구 통합<br>
+        - 대화형 글쓰기, 마케팅 카피에 효과적<br><br>
+        <strong>개발자 추천:</strong> "진지한 개발은 Claude, 브레인스토밍과 멀티모달은 ChatGPT. 둘 다 쓰는 게 정답."
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://dev.to/_d7eb1c1703182e3ce1782/chatgpt-vs-claude-for-coding-in-2026-a-developers-honest-comparison-26ok" target="_blank">원문 보기 →</a>
+      </div>
+    </div>
+
+    <div class="card"><div class="card-img-wrap"><img class="card-img" src="https://k-antenna.com/wp-content/uploads/2026/03/compare_table-1.png" alt="" onerror="this.parentElement.style.display='none'"></div>
+  
+      <div class="source">K-Antenna / PanelsAI</div>
+      <h3>ChatGPT vs Claude vs Gemini — 2026년 3월 용도별 최종 추천</h3>
+      <div class="summary">글로벌 AI 리뷰 커뮤니티가 정리한 2026년 3월 기준 3대 AI 챗봇 용도별 추천입니다. 연구·팩트체크: Gemini (웹 검색 연동 강점), 코딩·장문 분석: Claude (200K 컨텍스트), 범용·이미지생성: ChatGPT (DALL-E + 가장 넓은 기능), 가성비: Gemini (무료 기능 풍부). 세 AI 모두 $20/월 요금제에서 각자의 최상위 모델을 제공합니다.</div>
+      <details>
+        <summary><span class="btn-open">더보기</span><span class="btn-close">접기</span></summary>
+      </details>
+      <div class="tags"><span class="tag">#AI비교</span><span class="tag">#ChatGPT</span><span class="tag">#Claude</span><span class="tag">#Gemini</span></div>
+      <div class="detail-content">
+        <strong>용도별 최적 선택:</strong><br>
+        | 용도 | 추천 AI |<br>
+        | 코딩/디버깅 | Claude |<br>
+        | 웹 검색/리서치 | Gemini |<br>
+        | 장문 문서 분석 | Claude |<br>
+        | 이미지 생성 | ChatGPT |<br>
+        | 멀티모달 (사진 분석 등) | ChatGPT |<br>
+        | 자율 에이전트 작업 | Claude Code |<br>
+        | 무료 사용 | Gemini |<br><br>
+        <strong>2026년 3월 변화:</strong><br>
+        - Gemini: ChatGPT 대화 가져오기 기능 출시, 학생 무료 업그레이드<br>
+        - Claude: Computer Use로 데스크톱 제어 가능<br>
+        - ChatGPT: GPT-5.4 출시, Sora 서비스 종료
+      </div>
+      <div class="card-footer">
+        <a class="link" href="https://k-antenna.com/chatgpt-vs-claude-vs-gemini/" target="_blank">원문 보기 →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 7. 트렌드 키워드 -->
+<div class="section">
+  <div class="section-title">📈 트렌드 키워드</div>
+  <div class="keywords">
+    <span class="keyword hot">Agentic AI</span>
+    <span class="keyword hot">Computer Use</span>
+    <span class="keyword hot">GPT-5.4</span>
+    <span class="keyword hot">Seedance 2.0</span>
+    <span class="keyword hot">오픈소스 음성AI</span>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Generated by Claude AI · 2026년 03월 27일 09:00 KST</p>
+  <p style="margin-top: 12px;"><a href="https://www.threads.net/@calmtiger_" target="_blank">@Calmtiger_</a></p>
+  <p style="margin-top: 24px;">
+    <a href="https://page.stibee.com/subscriptions/480199" target="_blank" style="background: linear-gradient(135deg, #FFD166, #E07B0A); color: #1a1a1a; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 600; margin-right: 8px;">🎁 얼리버드 구독 (첫 달 무료)</a>
+    <a href="https://page.stibee.com/subscriptions/480200" target="_blank" style="color: #FFD166; font-size: 0.85em; text-decoration: none;">정상가 구독 →</a>
+  </p>
+</div>
+</body>
+</html>
